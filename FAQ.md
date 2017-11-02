@@ -14,6 +14,11 @@
 
 ---
 
+- Q: How to uninstall/upgrade Ice Box System plugin?
+- A: Please use file manager with root to delete /system/priv-app/com.catchingnow.iceboxsystemplugin.apk then reboot your phone.
+
+---
+
 - Q: I've purchased but it said "purchase fialed" after factory reset?
 - A: Please connect to network and wait for the auto update of Google Play service.
 
