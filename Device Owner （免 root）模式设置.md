@@ -11,6 +11,9 @@
 - 问：提示 “Not allowed to ... already several users on the device”
 - 答：第 2 步的多用户没删干净，请删除或关闭所有多用户/访客模式/应用双开。
 
+- 问：提示 “Not allowed to ... already several accounts on the device”
+- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。
+
 - 问：设置完成后手机通知栏出现提示「手机被管理」，这是正常的吗？
 - 答：正常的，这正是冰箱的免 Root 工作原理。
 
