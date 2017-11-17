@@ -14,6 +14,9 @@
 - 问：提示 “Not allowed to ... already several accounts on the device”
 - 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。
 
+- 问：MIUI 用户提示 “Neither user xxx nor current process has android.permission.MANAGE_DEVICE_ADMINS”
+- 答：MIUI 用户请手动在系统设置- 开发者设置里，开启「USB 调试（安全设置）」。
+
 - 问：设置完成后手机通知栏出现提示「手机被管理」，这是正常的吗？
 - 答：正常的，这正是冰箱的免 Root 工作原理。
 
