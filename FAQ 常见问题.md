@@ -11,6 +11,8 @@
 - 问：我是 OPPO/VIVO/步步高手机，应用列表只读得到几个 App？
 - 答：此系列手机请自行在系统权限设置中，打开读取应用列表权限。
 
+- 问：使用免 Root 模式后，每次解冻 app 权限都被重置了？
+- 答：这是个系统 bug，使用 AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) | [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
 
 - 问：刚解冻的 app 有时无法联网？
 - 答：请尝试确认您的手机上是否有管家类 App 默认关闭了相应 App 的权限。
