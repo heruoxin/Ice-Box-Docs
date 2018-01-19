@@ -8,11 +8,11 @@
 
 ###常见问题：
 
+- 问：提示 “Not allowed to ... already several accounts on the device”
+- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。如果注销所有账户后仍这样提示，请尝试拔出SIM卡，待配置完成后再插上。
+
 - 问：提示 “Not allowed to ... already several users on the device”
 - 答：第 2 步的多用户没删干净，请删除或关闭所有多用户/访客模式/应用双开。
-
-- 问：提示 “Not allowed to ... already several accounts on the device”
-- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。
 
 - 问：MIUI 用户提示 “Neither user xxx nor current process has android.permission.MANAGE_DEVICE_ADMINS”
 - 答：MIUI 用户请手动在系统设置- 开发者设置里，开启「USB 调试（安全设置）」。
