@@ -10,6 +10,7 @@
 
 - Q: It shows "Not allowed to ... already several accounts on the device"
 - A: Please follow step 1 and remove *ALL accounts*.Please note:if you device is Xperia or ZUK,you should remove SIM card in order to Setup Icebox.
+- A: Please follow step 1 and remove *ALL accounts*. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
 
 - Q: It shows "Not allowed to ... already several users on the device"
 - A: Please follow step 2 and remove the guest mode or multi app/private mode.
