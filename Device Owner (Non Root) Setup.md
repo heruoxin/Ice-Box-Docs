@@ -9,10 +9,10 @@
 ###FAQ
 
 - Q: It shows "Not allowed to ... already several accounts on the device"
-- A: Please follow step 1 and remove *ALL accounts*. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
+- A: Please follow step 2 and remove *ALL accounts*. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
 
 - Q: It shows "Not allowed to ... already several users on the device"
-- A: Please follow step 2 and remove the guest mode or multi app/private mode.
+- A: Please follow step 3 and remove the guest mode or multi app/private mode.
 
 - Q: There is "Device is managed by your organization" on my notification center after setting up. Why?
 - A: That is how Ice Box works.
