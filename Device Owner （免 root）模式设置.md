@@ -9,7 +9,6 @@
 ###常见问题：
 
 - 问：提示 “Not allowed to ... already several accounts on the device”
-- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。注意:如果您的设备是 Xperia 或 ZUK，请尝试拔出SIM卡，待配置完成后再插上。
 - 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。注意：如果您的设备是 Xperia 或 ZUK，请尝试拔出 SIM 卡，待配置完成后再插上。
 
 - 问：提示 “Not allowed to ... already several users on the device”
