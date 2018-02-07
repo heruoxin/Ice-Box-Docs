@@ -8,8 +8,9 @@
 
 ###常见问题：
 
+
 - 问：提示 “Not allowed to ... already several accounts on the device” 或 “Trying to set device owner but device is already provisioned”
-- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。注意：如果您的设备是 Xperia 或 ZUK，请尝试拔出 SIM 卡，待配置完成后再插上。
+- 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。注： Xperia 或 ZUK 设置时请拔出 SIM 卡，之后再插入。
 
 - 问：提示 “Not allowed to ... already several users on the device”
 - 答：第 2 步的多用户没删干净，请删除或关闭所有多用户/访客模式/应用双开。
