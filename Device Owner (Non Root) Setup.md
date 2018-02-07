@@ -8,7 +8,7 @@
 
 ###FAQ
 
-- Q: It shows "Not allowed to ... already several accounts on the device"
+- Q: It shows "Not allowed to ... already several accounts on the device" or "Trying to set device owner but device is already provisioned"
 - A: Please follow step 2 and remove *ALL accounts*. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
 
 - Q: It shows "Not allowed to ... already several users on the device"
