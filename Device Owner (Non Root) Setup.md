@@ -1,4 +1,4 @@
-###Device Owner (Non Root) Mode Setup
+### Device Owner (Non Root) Mode Setup
 
 1. Make sure your phone running Android  5.0+ and you know how to use [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) clearly.
 2. Go to "Settings - Accounts", remove ALL ACCOUNTS including your Google account.
@@ -6,7 +6,7 @@
 4. Run "adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver " on your computer.
 5. Reboot then you can add your accounts and guest mode back.
 
-###FAQ
+### FAQ
 
 - Q: It shows "Not allowed to ... already several accounts on the device"
 - A: Please follow step 2 and remove *ALL accounts*. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
