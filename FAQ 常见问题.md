@@ -18,6 +18,8 @@
 - 问：使用免 Root 模式后，每次解冻 app 权限都被重置了？
 - 答：这是个系统 bug，使用 AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) | [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
 
+- 问：免 Root 模式，华为手机每次打开都要重置权限？
+- 答：还是系统 bug，手机系统没有处理好免 root 解冻（pm hide）和新安装的区别，冰箱无法解决。请考虑切换冰箱到 Shizuku Manager/黑阈等模式。
 
 - 问：设备管理员（免 Root）模式下怎么卸载冰箱？
 - 答：在冰箱设置里，先解冻全部，再点击「卸载」即可。
