@@ -13,7 +13,9 @@
 - 偶尔刚解冻的 App 无法联网，关掉重开就好了（一加等）
 
 
-如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也是免 Root 的，但是每次重启手机都需要连电脑再配一次。[Shizuku 使用教程](https://jingyan.baidu.com/article/e52e361568e6d540c60c5108.html)
+如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也是免 Root 的，但是每次重启手机都需要连电脑再配一次。
+
+[Shizuku 使用教程](https://jingyan.baidu.com/article/e52e361568e6d540c60c5108.html)
 
 设备管理员模式则不需要反复连接电脑设置，一次配置，终身有效，重启或升级系统都没有影响。
 
@@ -26,6 +28,14 @@
 3. 如果您之前设置过多用户或手机自带访客模式、应用双开等，也需要一并关闭或删除（之后可以打开）。
 4. 在电脑上执行（手机终端模拟器不行）`adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver` 
 5. 如果显示 Success 之类的字样，那么重启您的手机。之后即可打开冰箱使用，也可以把之前删除的帐号加回来了。
+
+#### 其他事项
+
+adb 工具可以在下列地址下载：
+
+- Google 官方地址 （[Win](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)）
+
+- 国内[百度盘](https://pan.baidu.com/s/1q9SWiK9Loivyt6zvr98seQ)
 
 
 ### 常见问题：
