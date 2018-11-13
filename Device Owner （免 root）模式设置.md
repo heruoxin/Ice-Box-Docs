@@ -49,7 +49,7 @@ adb 工具可以在下列地址下载：
 - 答：第 2 步的多用户没删干净，请删除或关闭所有多用户/访客模式/应用双开。
 
 - 问：MIUI 用户提示 “Neither user xxx nor current process has android.permission.MANAGE_DEVICE_ADMINS”
-- 答：MIUI 用户请手动在系统设置- 开发者设置里，开启「USB 调试（安全设置）」。
+- 答：MIUI 用户请手动在系统设置- 开发者设置里，开启「USB 调试（安全设置）」，如仍不可以请关闭 MIUI 优化。
 
 
 #### 已设置成功，但是？
