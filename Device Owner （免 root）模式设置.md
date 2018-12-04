@@ -9,12 +9,12 @@
 - 每次冻结 App 弹出卸载提示，解冻弹出权限请求（华为、锤子）
 - 通知栏闪烁「设备管理员已开启，点击关闭」（OPPO、VIVO）
 - 自带的双开无法使用（华为、MIUI）
-- 安全文件夹可能被系统禁用、密码可能被系统随机重置（三星）
-- 偶尔刚解冻的 App 无法联网，关掉重开就好了（一加等）
-- 索尼手机建议在 9.0 以下先设置好冰箱，9.0 开始由于系统添加了隐藏帐号从而无法给冰箱授权（已授权的不受影响）。
+- 安全文件夹等可能被系统禁用。目前收到少量报告，重启后锁屏密码可能被系统随机重置，暂无解决办法（三星）
+- 偶尔刚解冻的 App 无法联网，关掉 App 重开即可（一加等）
+- 索尼手机建议在升级 9.0 之前先设置好冰箱，9.0 开始由于系统添加了隐藏帐号难以删除，如果实在已经升级，建议使用下面的免电脑二维码设置（已授权的不受影响）。
 
 
-如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也是免 Root 的，但是每次重启手机都需要连电脑再配一次。
+如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也可免 Root ，但每次重启手机都需要连电脑再配一次。
 
 [Shizuku 使用教程](https://jingyan.baidu.com/article/e52e361568e6d540c60c5108.html)
 
@@ -22,7 +22,7 @@
 
 ### 没有电脑怎么办？
 
-可以尝试 [免电脑设置](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E5%85%8D%20Root%20%E5%85%8D%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE.md) ，效果完全相同，但是：
+可以尝试 [免电脑二维码设置](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E5%85%8D%20Root%20%E5%85%8D%E7%94%B5%E8%84%91%E8%AE%BE%E7%BD%AE.md) ，效果完全相同，但是：
 
 1. 需要把手机恢复出厂设置
 2. 仅支持 7.0 及以上系统版本，诸多国产手机很可能阉割了此功能。
@@ -31,8 +31,8 @@
 ### 设备管理员设置步骤
 
 0. 首先确保您的手机 Android 版本大于等于 5.0，您已经知道如何操作 [adb](https://sspai.com/post/23509) 命令。并且已经阅读完整篇教程。
-1. 取出手机 SIM 卡，三星手机如果之前没有设置过锁屏手势/指纹/密码，请先设置一个密码。
-2. 进入手机「设置 - 帐户」，删除 #所有# 的帐户，包括你的 Google 帐户（之后可以再登录回来）。
+1. 索尼手机取出手机 SIM 卡；三星手机如果之前没有设置过锁屏手势/指纹/密码，建议设置一个指纹和密码；小米用户请开启「USB 调试（安全设置）」关闭「MIUI 优化」。
+2. 进入手机「设置 - 帐户」，删除 #所有# 的帐户，包括你的 Google/小米/华为等系统帐号（之后可以再登录回来）。
 3. 如果您之前设置过多用户或手机自带访客模式、应用双开等，也需要一并关闭或删除（之后可以打开）。
 4. 在电脑上执行（手机终端模拟器不行）`adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver` 
 5. 如果显示 Success 之类的字样，那么即可打开冰箱使用，也可以把之前删除的帐号加回来了。
