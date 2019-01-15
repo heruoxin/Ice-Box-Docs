@@ -1,8 +1,8 @@
-## 冰箱免 Root 免电脑设置方法
+## 冰箱二维码设置方法
 
-注意：此方法可能仅适用于原生和类原生的 7.0 及以上固件，并且需要格式化手机。
+注意：此方法仅适用于原生和类原生的 7.0 及以上固件，并且需要格式化手机。
 
-如有电脑请尽量参照 [免 Root 连接电脑设置](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE.md) 教程来进行设置。
+如有电脑请尽量参照 [免 Root 连接电脑设置](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE.md) 教程或使用 [秋之盒一键工具](https://www.atmb.top/help/?md=dpm.md) 来进行设置。
 
 ### 步骤：
 
