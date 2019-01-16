@@ -12,4 +12,4 @@ Note: This method only works on Android 7.0 and above and requires factory rest.
 4. Follow onscreen instructions.
 
 
-<img src="/icebox_dpm_qr.png?raw=true" width="320">
+<img src="/icebox_qr_dpm_en.png?raw=true" width="320">
