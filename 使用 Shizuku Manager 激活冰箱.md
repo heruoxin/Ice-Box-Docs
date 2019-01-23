@@ -8,10 +8,12 @@
 使用激活步骤如下：
 
 1. 在手机上安装 Shizuku Manager，并打开一次: [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)|[国内酷安市场](https://www.coolapk.com/apk/moe.shizuku.privileged.api)
-2. 如果您了解如何使用 ADB 命令，那么直接在电脑删执行下列命令，如果不了解，请[点此下载一键激活工具]() ，并运行激活。
+2. 如果您了解如何使用 ADB 命令，那么直接在电脑删执行下列命令：
 
 ```
 adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
 ```
+
+如果不了解，请[点此下载秋之盒一键激活工具](https://www.atmb.top/download/) ，运行并选择激活 Shizuku Manager。
 
 之后打开冰箱，选择 Shizuku 模式即可使用。每次重启后都需要连接电脑执行步骤 2
