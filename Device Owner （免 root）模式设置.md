@@ -11,7 +11,6 @@
 - 通知栏闪烁「设备管理员已开启，点击关闭」（OPPO、VIVO）
 - 自带的双开无法使用（华为、MIUI）
 - 偶尔刚解冻的 App 无法联网，关掉 App 重开即可（一加、锤子等）
-- 索尼建议在升级 9.0 之前先设置好冰箱，9.0 系统添加了隐藏帐号难以删除，如已升级，建议使用下面的免电脑二维码设置（已授权的不受影响）。
 
 
 如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也可免 Root ，但每次重启手机都需要连电脑再配一次。
