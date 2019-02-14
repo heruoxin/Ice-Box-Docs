@@ -6,7 +6,7 @@
 
 国产手机系统时常添加各种中国特色功能，因此其与设备管理员模式的兼容性或多或少存在一些问题，常见如下：
 
-- 三星有可能被系统锁定密码（目前收到反馈大约二十万分之四），请参考[这里](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20%E4%B8%89%E6%98%9F%E7%89%B9%E5%88%AB%E8%AF%B4%E6%98%8E.md)
+- 三星有可能被系统锁定密码，请参考[这里](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20%E4%B8%89%E6%98%9F%E7%89%B9%E5%88%AB%E8%AF%B4%E6%98%8E.md)
 - 每次冻结 App 弹出卸载提示，解冻弹出权限请求（华为、锤子）
 - 通知栏闪烁「设备管理员已开启，点击关闭」（OPPO、VIVO）
 - 自带的双开无法使用（华为、MIUI）
