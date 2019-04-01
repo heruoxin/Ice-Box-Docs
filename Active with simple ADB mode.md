@@ -9,7 +9,7 @@ You can set up the simple ADB mode if you don't want to delete the accounts or h
 ### Step
 
 1. Please keep the USB debugging always on and set the USB connection to "charge only". For MIUI enable the "USB debugging (security setting)".
-2. Input the cmd:
+2. Run the cmd:
 
 ```
 adb shell sh /sdcard/Android/data/com.catchingnow.icebox/files/start.sh
