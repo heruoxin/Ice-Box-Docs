@@ -13,3 +13,7 @@
 
  [激活器下载地址](http://files.catchingnow.com/%E5%86%B0%E7%AE%B1%E6%BF%80%E6%B4%BB%E5%99%A8-Windows.zip)
  
+如果您不愿使用激活器，并且熟悉如何手动执行 ADB 命令的话，也可以手动执行： 
+```
+adb shell sh /sdcard/Android/data/com.catchingnow.icebox/files/start.sh
+```
