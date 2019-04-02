@@ -4,7 +4,7 @@
 
 
 - 问：免 Root 手机通知栏出现提示「设备由您所在单位管理」，这是正常的吗？
-- 答：正常的，这正是冰箱的免 Root 工作原理，除非卸载冰箱或切换成其他模式，否则无法解决。
+- 答：正常的，这正是冰箱的免 Root 工作原理，无法删除，但可以在冰箱实验室中修改单位名称为任意你喜欢的文字。
 
 
 - 问：设置完免 Root 后，自带的双开、安全文件夹、虹膜识别不能用了？
@@ -16,13 +16,13 @@
 
 
 - 问：使用免 Root 模式后，每次解冻 app 权限都被重置了？
-- 答：这是个系统 bug，使用 AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) | [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
+- 答：这是个系统 bug，使用 Rikka AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) | [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
 
 
 - 问：免 Root 模式，华为、小米手机每次打开都要申请各种权限？
 - 答：还是系统 bug，手机系统没有处理好免 root 解冻（pm hide）和新安装的区别，冰箱无法解决。
 
-MIUI 用户请关闭 MIUI 优化即可，其他用户请考虑切换冰箱到普通 ADB 等重启需重新授权的模式。
+MIUI 用户请关闭 MIUI 优化即可，其他用户请考虑切换到普通 ADB 等重启需重新授权的模式。
 
 
 - 问：设备管理员（免 Root）模式下怎么卸载冰箱？
