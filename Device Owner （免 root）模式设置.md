@@ -13,9 +13,7 @@
 - 偶尔刚解冻的 App 无法联网，关掉 App 重开即可（一加、锤子等）
 
 
-如不能接受上述问题，请考虑使用 [Shizuku Manager](https://www.coolapk.com/apk/moe.shizuku.privileged.api) /[黑阈](https://www.coolapk.com/apk/me.piebridge.brevent)等模式使用冰箱。也可免 Root ，但每次重启手机都需要连电脑再配一次。
-
-[Shizuku 使用教程](https://jingyan.baidu.com/article/e52e361568e6d540c60c5108.html)
+如不能接受上述问题，请考虑使用 [普通 ADB ](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%99%A8%EF%BC%88%E6%99%AE%E9%80%9A%20ADB%20%E6%A8%A1%E5%BC%8F%EF%BC%89.md)等模式使用冰箱。也可免 Root ，但每次重启手机都需要连电脑再配一次。
 
 设备管理员模式则不需要反复连接电脑设置，一次配置，终身有效，重启或升级系统都没有影响。
 
@@ -29,12 +27,15 @@
 
 ### 设备管理员设置步骤
 
-0. 首先确保您的手机 Android 版本大于等于 5.0，您已经知道如何操作 [adb](https://sspai.com/post/23509) 命令。并且已经阅读完整篇教程。
-1. 索尼手机取出手机 SIM 卡；小米用户请开启「USB 调试（安全设置）」关闭「MIUI 优化」。
-2. 进入手机「设置 - 帐户」，删除 #所有# 的帐户，包括你的 Google/小米/华为等系统帐号（之后可以再登录回来）。
-3. 如果您之前设置过多用户或手机自带访客模式、应用双开等，也需要一并关闭或删除（之后可以打开）。
-4. 在电脑上执行（手机终端模拟器不行）`adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver` 
-5. 如果显示 Success 之类的字样，那么即可打开冰箱使用，也可以把之前删除的帐号加回来了。
+如果您不知道如何使用命令行，可以考虑使用[一键激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)
+
+1. 首先确保您的手机 Android 版本大于等于 5.0，您已经知道如何操作 [adb](https://sspai.com/post/23509) 命令。并且已经阅读完整篇教程。
+2. 索尼手机取出手机 SIM 卡；小米用户请开启「USB 调试（安全设置）」关闭「MIUI 优化」。
+3. 进入手机「设置 - 帐户」，删除 #所有# 的帐户，包括你的 Google/小米/华为等系统帐号（之后可以再登录回来）。
+4. 如果您之前设置过多用户或手机自带访客模式、应用双开等，也需要一并关闭或删除（之后可以打开）。
+5. 在电脑上执行（手机终端模拟器不行）`adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver` 
+
+如果显示 Success 之类的字样，那么即可打开冰箱使用，也可以把之前删除的帐号加回来了。
 
 #### 其他事项
 
