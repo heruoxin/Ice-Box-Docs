@@ -1,4 +1,4 @@
-## 冰箱免 Root（设备管理员模式）使用配置方法
+## 冰箱免 Root（设备管理员模式）手动配置方法
 
 如果您的手机已经 Root 请直接打开冰箱使用，无需折腾。如果手机无法 Root，请务必连接电脑，仔细阅读下文：
 
@@ -16,6 +16,10 @@
 如不能接受上述问题，请考虑使用 [普通 ADB ](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%99%A8%EF%BC%88%E6%99%AE%E9%80%9A%20ADB%20%E6%A8%A1%E5%BC%8F%EF%BC%89.md)等模式使用冰箱。也可免 Root ，但每次重启手机都需要连电脑再配一次。
 
 设备管理员模式则不需要反复连接电脑设置，一次配置，终身有效，重启或升级系统都没有影响。
+
+### 如何使用激活器？
+
+如果您不熟悉 ADB 和命令行操作，请首先考虑使用[自动激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)。
 
 ### 没有电脑怎么办？
 
@@ -51,7 +55,10 @@ adb 工具可以在下列地址下载：
 #### 未设置成功？
 
 - 问：提示 “adb不是内部或外部命令 也不是可运行程序”
-- 答：您可能不熟悉电脑操作命令行相关的知识。建议使用[一键激活工具](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)激活。
+- 答：您可能不熟悉电脑操作命令行相关的知识。建议直接使用[一键激活工具](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)激活。
+
+- 问：激活器一直载入中？
+- 答：请把激活器压缩包内的所有文件都解压到电脑上后再操作，不要解压到手机存储卡上，不要直接双击 zip 里的 exe
 
 - 问：提示 “error: no devices/emulators found”
 - 答：手机未连接上电脑，请检查手机是否开启 USB 调试，电脑是否正确安装了对应的驱动，有没有QQ/管家/杀毒软件阻止了连接。
