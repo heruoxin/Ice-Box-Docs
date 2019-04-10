@@ -17,9 +17,9 @@
 
 设备管理员模式则不需要反复连接电脑设置，一次配置，终身有效，重启或升级系统都没有影响。
 
-### 如何使用激活器？
+### 使用命令行，还是使用激活器？
 
-如果您不熟悉 ADB 和命令行操作，请首先考虑使用[自动激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)。
+如果您不熟悉 ADB 和命令行操作，请首先考虑使用[自动激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)。如果您熟悉的话，可以直接使用下列命令行。
 
 ### 没有电脑怎么办？
 
@@ -29,9 +29,9 @@
 2. 仅支持 7.0 及以上系统版本，诸多国产手机很可能阉割了此功能。
 
 
-### 设备管理员设置步骤
+### 命令行设置步骤
 
-如果您不知道如何使用命令行，可以考虑使用[一键激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)
+再次提醒：如果您不知道如何使用命令行，请使用[一键激活器](https://github.com/heruoxin/Ice-Box-Docs/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7.md)。下面的内容是命令行的设置步骤：
 
 1. 首先确保您的手机 Android 版本大于等于 5.0，您已经知道如何操作 [adb](https://sspai.com/post/23509) 命令。并且已经阅读完整篇教程。
 2. 索尼手机取出手机 SIM 卡；小米用户请开启「USB 调试（安全设置）」关闭「MIUI 优化」。
@@ -46,9 +46,6 @@
 adb 工具可以在下列地址下载：
 
 - Google 官方地址 （[Win](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip) [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)）
-
-- 国内[百度盘](https://pan.baidu.com/s/1q9SWiK9Loivyt6zvr98seQ)
-
 
 ### 常见问题：
 
@@ -67,10 +64,10 @@ adb 工具可以在下列地址下载：
 - 答：第 1 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、华为账户等，索尼手机请拔 SIM 卡重启。
 
 - 问：提示 “Not allowed to ... already several users on the device”
-- 答：第 2 步的多用户没删干净，请删除或关闭所有多用户/访客模式/应用双开。
+- 答：第 2 步的多用户或应用双开没删干净，请删除或关闭所有多用户/访客模式/应用双开。
 
 - 问：提示 “Trying to set the device owner, but device owner is already set.”？
-- 答：您已设置其他 app 为设备管理员。一台手机上只能有一个设备管理员。如果您设置的管理员是 Island 或小黑屋等已与冰箱互联互通的 app，那么直接在冰箱中选择对应选项即可直接使用。
+- 答：您已设置其他 app 为设备管理员。一台手机上只能有一个设备管理员。如果您设置的管理员是 Island 或小黑屋等与冰箱互联互通的 app，那么直接在冰箱中选择对应选项即可直接使用。
 
 - 问：MIUI 用户提示 “Neither user xxx nor current process has android.permission.MANAGE_DEVICE_ADMINS”
 - 答：MIUI 用户请手动在系统设置- 开发者设置里，开启「USB 调试（安全设置）」，如仍不可以请关闭 MIUI 优化。
@@ -86,4 +83,3 @@ adb 工具可以在下列地址下载：
 
 - 问：我之前用 Root 冻结的程序怎么解冻不了？
 - 答：每种冻结模式之间不兼容，请在冰箱实验室中切换引擎，哪种模式冻结的就在哪种模式里解冻。
-
