@@ -2,7 +2,7 @@
 
 注意：此方法仅适用于原生和类原生的 7.0 及以上固件，并且需要格式化手机。
 
-如有电脑请尽量使用 [秋之盒一键激活工具](https://iceboxdoc.catchingnow.com/blob/master/%E4%BD%BF%E7%94%A8%E7%A7%8B%E4%B9%8B%E7%9B%92%E6%BF%80%E6%B4%BB) 或阅读 [手动 ADB 设置教程](https://iceboxdoc.catchingnow.com/blob/master/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE) 来进行设置。
+如有电脑请尽量使用 [秋之盒一键激活工具](https://iceboxdoc.catchingnow.com/%E4%BD%BF%E7%94%A8%E7%A7%8B%E4%B9%8B%E7%9B%92%E6%BF%80%E6%B4%BB) 或阅读 [手动 ADB 设置教程](https://iceboxdoc.catchingnow.com/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE) 来进行设置。
 
 ### 步骤：
 

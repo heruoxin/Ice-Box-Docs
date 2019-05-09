@@ -1,6 +1,6 @@
 ## 使用相关
 
-（Engilish Version [here](https://iceboxdoc.catchingnow.com/blob/master/FAQ))
+（Engilish Version [here](https://iceboxdoc.catchingnow.com/FAQ))
 
 
 - 问：免 Root 手机通知栏出现提示「设备由您所在单位管理」，这是正常的吗？
@@ -74,4 +74,4 @@ MIUI 用户请关闭 MIUI 优化即可，其他用户请考虑切换到普通 AD
 - 问：在 Google Play 购买，重装后没了？
 - 答：请先确认您的手机可以正常连接 Google。如果刚刷机，可能需要连接 WIFI 等待 Google Play 自动更新。之后再点击冰箱中的「Play 购买 - 我已付款」即可。
 
-更详细的购买相关请见：<https://iceboxdoc.catchingnow.com/blob/master/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E>
+更详细的购买相关请见：<https://iceboxdoc.catchingnow.com/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E>

@@ -1,6 +1,6 @@
 # 一键激活器（普通 ADB 模式）
 
-如果您未能成功配置[设备管理员模式](https://iceboxdoc.catchingnow.com/blob/master/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7)的冰箱，则可以考虑使用普通 ADB 模式。相比管理员模式有以下区别：
+如果您未能成功配置[设备管理员模式](https://iceboxdoc.catchingnow.com/%E4%B8%80%E9%94%AE%E6%BF%80%E6%B4%BB%E5%B7%A5%E5%85%B7)的冰箱，则可以考虑使用普通 ADB 模式。相比管理员模式有以下区别：
 
 - 优点：无需删除帐号等复杂步骤，直接使用
 - 缺点：每次重启手机后必须要重新激活，否则无法冻结解冻 App
