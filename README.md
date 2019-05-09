@@ -10,7 +10,9 @@
 
 ### 遇到问题？
 
-请阅读 [常见问题解答](http://iceboxdoc.catchingnow.com/FAQ%20常见问题)
+使用问题？请阅读 [常见问题解答](http://iceboxdoc.catchingnow.com/FAQ%20常见问题)
+
+支付问题？请阅读 [冰箱支付说明](https://iceboxdoc.catchingnow.com/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E)
 
  --- English Version ---
 
