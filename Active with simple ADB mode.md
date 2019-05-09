@@ -1,6 +1,6 @@
 # Active with simple ADB mode
 
-It is recommended to set up the [device owner mode](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20(Non%20Root)%20Setup.md).
+It is recommended to set up the [device owner mode](https://iceboxdoc.catchingnow.com/blob/master/Device%20Owner%20(Non%20Root)%20Setup).
 You can set up the simple ADB mode if you don't want to delete the accounts or have other difficulties.
 
 - Pros: no need to delete the account and other steps.

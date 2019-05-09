@@ -1,7 +1,7 @@
 
 # Device Owner (QR Code) Setup
 
-Note: This method only works on Android 7.0 and above and requires factory rest. It is recommend to setup with [ADB command](https://github.com/heruoxin/Ice-Box-Docs/blob/master/Device%20Owner%20(Non%20Root)%20Setup.md) if you have a computer.
+Note: This method only works on Android 7.0 and above and requires factory rest. It is recommend to setup with [ADB command](https://iceboxdoc.catchingnow.com/blob/master/Device%20Owner%20(Non%20Root)%20Setup) if you have a computer.
 
 ## Step
 
