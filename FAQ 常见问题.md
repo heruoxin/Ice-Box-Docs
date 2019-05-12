@@ -16,7 +16,7 @@
 
 
 - 问：使用免 Root 模式后，每次解冻 app 权限都被重置了？
-- 答：这是个系统 bug，使用 Rikka AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) | [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
+- 答：这是个系统 bug，使用 Rikka AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) / [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
 
 
 - 问：免 Root 模式，华为、小米手机每次打开都要申请各种权限？
