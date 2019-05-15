@@ -14,6 +14,8 @@
 
 支付问题？请阅读 [冰箱支付说明](https://iceboxdoc.catchingnow.com/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E)
 
+[冰箱更新日志](./changelog.md)
+
  --- English Version ---
 
 ### How to Use?
@@ -26,3 +28,4 @@ Does not? [Read this](http://iceboxdoc.catchingnow.com/QR%20Code%20(Non%20Root)%
 
 ### Have issues?
 [Read the FAQ](http://iceboxdoc.catchingnow.com/FAQ).
+
