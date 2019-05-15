@@ -1,6 +1,6 @@
 # 冰箱 Ice Box 更新历史记录
 
-官方最新 App 下载地址：
+最新 App 下载地址：
 
 [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
 
@@ -17,8 +17,8 @@
 
 3.14.2
 
-- 新增通用 SDK，等待其他 App 适配，敬请期待
-- 试验支持微信、QQ 支付（手工转账），详见 http://t.cn/EiRfa7C
+- 新增通用 SDK <http://t.cn/EKo5RBs>
+- 试验支持微信、QQ 支付（手工转账），详见 <http://t.cn/EKoc7v5>
 
 3.14.0
 
@@ -81,7 +81,7 @@
 
 3.9.5
 
-- SDK 新增支持安装卸载 App 支持，欢迎开发者适配：https://github.com/heruoxin/IceBox-SDK
+- SDK 新增支持安装卸载 App 支持，欢迎开发者适配： <https://github.com/heruoxin/IceBox-SDK>
 - SDK 新增日志中心，所有第三方 App 的冻结/安装/卸载操作都会留存记录
 - 已设置小黑屋为设备管理员可以直接使用冰箱
 - 新中二选项：拔剑有声
@@ -120,7 +120,7 @@
 
 3.8.6
 - 略微提升快捷方式在 Android P Launcher 中的出现频次
-- 实验室新增跳转向 1ceboxTurner Xposed 插件的选项（由 @web1n 提供）
+- 实验室新增跳转向 [1ceboxTurner Xposed 插件](https://repo.xposed.info/module/gs.https.icebox.tuner) 的选项（由 @web1n 提供）
 - 其他 Bug 修复
 
 3.8.1
@@ -144,11 +144,10 @@
 - 主题面板可以调节透明度. 
 - 添加「全部解冻」快捷方式.
 - 开启指纹锁时在多任务界面隐藏冰箱内容. 
-- 新增 SDK，欢迎其他冻结类的 app 适配： https://github.com/heruoxin/IceBox-SDK
+- 新增 SDK，欢迎其他冻结类的 app 适配： <https://github.com/heruoxin/IceBox-SDK>
 
 
 3.5.2 Beta
-- 这是一个仅向酷安和 Google Play Beta 渠道发布的 Beta 测试版本
 - 实验室中新增一些选项：
 - 如果更换了图标包，请点击「清空图标缓存」
 - 如果图标大小不一致，清空缓存后可考虑关闭「缩放过大图标」选项
@@ -163,5 +162,4 @@
 
 
 3.4.0
-- 添加使用黑域或 Shizuku Manager 作为引擎。如果既没有 root 也不便设置 Island
-或管理员模式，则可以使用此模式。
+- 添加使用黑域或 Shizuku Manager 作为引擎。如果既没有 root 也不便设置 Island 或管理员模式，则可以使用此模式。
