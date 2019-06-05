@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # 冰箱 Ice Box 更新历史记录
 
 最新 App 下载地址：

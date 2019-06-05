@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 ## 使用相关
 
 （Engilish Version [here](https://iceboxdoc.catchingnow.com/FAQ))

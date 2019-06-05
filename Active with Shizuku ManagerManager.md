@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # Active Ice Box with Shizuku Manager
 
 Setting up Shizuku Manager is much easier than the device owner but has the follow limitations:

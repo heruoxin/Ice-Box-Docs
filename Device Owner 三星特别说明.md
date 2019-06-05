@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # 三星设备设置设备管理员（Device Owner）风险提示
 
 冰箱是基于 Android 系统原生的设备管理员相关功能开发的。而在 Android 阵营中，三星非常特殊，其自行实现了一套名为 KNOX 的安全框架。

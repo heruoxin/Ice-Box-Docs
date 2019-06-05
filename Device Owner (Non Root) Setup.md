@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 ### Device Owner (Non Root) Mode Setup
 
 1. Make sure your phone running Android  5.0+ and you know how to use [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) clearly.

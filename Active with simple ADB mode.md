@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # Active with simple ADB mode
 
 It is recommended to set up the [device owner mode](https://iceboxdoc.catchingnow.com/Device%20Owner%20(Non%20Root)%20Setup).

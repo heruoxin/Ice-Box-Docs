@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 ## 冰箱免 Root（设备管理员模式）手动配置方法
 
 如果您的手机已经 Root 请直接打开冰箱使用，无需折腾。如果手机无法 Root，请务必连接电脑，仔细阅读下文：
