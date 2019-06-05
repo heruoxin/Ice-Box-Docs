@@ -1,3 +1,4 @@
+<script src="/main.js?raw=true"></script>
 
 # Device Owner (QR Code) Setup
 

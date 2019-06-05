@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # 使用 Shizuku Manager 激活冰箱 Ice Box
 
 使用 Shizuku Manager 配合免 root 激活冰箱，相比设置设备管理员模式更为简便，成功率高，但有以下局限：

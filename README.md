@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # 冰箱 Ice Box 教程大全
 
 ### 初次使用？

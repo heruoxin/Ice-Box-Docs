@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 以下是几个冰箱的自定义主题，请复制链接后打开冰箱即可识别
 
 

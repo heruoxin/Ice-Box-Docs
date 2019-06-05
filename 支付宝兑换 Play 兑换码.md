@@ -1,3 +1,5 @@
+<script src="/main.js?raw=true"></script>
+
 # 支付宝支付兑换 Play 兑换码
 
 声明：此服务仅为帮助中国大陆地区用户，如您可以直接通畅使用 Google 钱包，建议直接通过 Play 购买。
