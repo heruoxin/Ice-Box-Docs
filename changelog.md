@@ -1,6 +1,6 @@
 <script src="/main.js?raw=true"></script>
 
-# 冰箱 Ice Box 更新历史记录
+# 冰箱 Ice Box 更新记录
 
 最新 App 下载地址：
 
@@ -10,7 +10,23 @@
 
 [Beta 测试群](https://t.me/iceboxapp)
 
+### 分发渠道说明
+
+冰箱 Ice Box 目前主要有以下几个分发渠道：
+
+- G [Google Play Sotre 渠道](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
+- C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox)
+- M 其他国内商店渠道
+
+可在冰箱「设置 - 关于」界面看到具体的版本和渠道信息。不同渠道包的内容是一样的，国内商店渠道更新较慢，且有时受审核影响功能可能有阉割。建议从 Google Play 或酷安下载。
+
+注：以上列出的均为**分发渠道**，不是**支付渠道**。支付渠道取决于安装方式，从 Play Store 下载安装的，使用 Google 支付和验证；其他所有方式安装的，都使用支付宝或[其他支付方式](https://iceboxdoc.catchingnow.com/%E5%85%B6%E4%BB%96%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F)。
+
 ### 更新日志
+
+3.16.0
+- 新增关联应用介绍页面
+- Bug 修复和性能提升
 
 3.15.8
 - 修复一些可能在后台耗电的问题
