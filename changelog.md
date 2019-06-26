@@ -11,7 +11,7 @@
 - C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox)
 - M 其他国内商店渠道
 
-- Beta 内测版测试渠道，如需使用请加入[Beta 测试群](https://t.me/iceboxapp)
+- Beta [内测版渠道](https://t.me/iceboxapp)
 
 可在冰箱「设置 - 关于」界面看到具体的版本和渠道信息。不同渠道包的内容是一样的，国内商店渠道更新较慢，且有时受审核影响功能可能有阉割。建议从 Google Play 或酷安下载。
 
