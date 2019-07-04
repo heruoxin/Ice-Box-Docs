@@ -32,12 +32,10 @@
 - 答：这是个系统 bug，使用 Rikka AppOps （[Play](https://play.google.com/store/apps/details?id=rikka.appops) / [国内](https://www.coolapk.com/apk/rikka.appops)）可以在解冻时自动重新应用权限规则。
 
 - 问：免 Root 模式，华为、小米手机每次打开都要申请各种权限？
-- 答：还是系统 bug，手机系统没有处理好免 root 解冻（pm hide）和新安装的区别，冰箱无法解决。
-
-MIUI 用户请关闭 MIUI 优化即可，其他用户请考虑切换到普通 ADB 等重启需重新授权的模式。
+- 答：MIUI 用户请关闭 MIUI 优化即可，其他手机暂未找到开关。
 
 - 问：免 Root 模式下怎么卸载冰箱？
-- 答：在冰箱设置里，先解冻全部，再点击「卸载」即可。
+- 答：在冰箱设置里，点击「卸载」即可，卸载前务必再三确认所有 App 均已解冻。
 
 
 ### 通用问题
