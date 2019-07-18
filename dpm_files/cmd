@@ -1,1 +1,0 @@
-keytool -list -printcert -jarfile [path_to_your_apk] | perl -nle "print $& if m{(?<=SHA256:) .*}" | xxd -r -p | openssl base64 | tr -d '=' | tr -- '+/=' '-_'

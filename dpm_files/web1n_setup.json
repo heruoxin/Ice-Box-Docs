@@ -1,7 +1,0 @@
-{
-"android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "web1n.stopapp/.receiver.AdminReceiver",
-"android.app.extra.PROVISIONING_SKIP_ENCRYPTION": true,
-"android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "GsZOqY4HH-Ye-jQsbEG1ea2fys4QJqFiqBpIgkIQww0",
-"android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://static.chinacloudsites.cn/web1n_dpm.zip"
-}
-

@@ -12,6 +12,8 @@ Note: This method only works on Android 7.0 and above and requires factory rest.
 3. Scan the QR code.
 4. Follow onscreen instructions.
 
-<img src="/icebox_qr_dpm_en.png?raw=true" width="320">
+<img src="https://files.catchingnow.com/dpm/icebox_en.png?raw=true" width="320">
 
 After stepping up please open Ice Box and go to settings -> lab -> active system apps to enable system apps you needed.
+
+

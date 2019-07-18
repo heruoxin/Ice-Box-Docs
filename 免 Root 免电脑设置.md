@@ -16,7 +16,7 @@
 
 3. 按提示连接 wifi 下载扫码器，扫描此二维码，即可全自动安装配置冰箱。
 
-<img src="/icebox_dpm_qr.png?raw=true" width="320">
+<img src="https://files.catchingnow.com/dpm/icebox.png?raw=true" width="320">
 
 ### 注意事项：
 
@@ -30,5 +30,5 @@
 
 一台设备仅能设置一个管理员。如需配置炼妖壶 Island，或小黑屋等 App 为设备管理员，可分别扫码下方对应的二维码：
 
-<img src="/other_apps_qr.png?raw=true" width="960">
+<img src="https://files.catchingnow.com/dpm/all_apps.png?raw=true" width="960">
 
