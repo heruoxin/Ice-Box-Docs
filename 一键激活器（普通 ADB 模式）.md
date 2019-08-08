@@ -13,7 +13,7 @@
 2. 保持 USB 调试始终打开，设置 USB 连接设置为「仅充电」（MIUI 需开启「USB 调试（安全设置）」）
 3. 将手机连接到电脑，打开激活器，激活即可
 
- [激活器下载地址](http://files.catchingnow.com/%E5%86%B0%E7%AE%B1%E6%BF%80%E6%B4%BB%E5%99%A8-Windows.zip)
+ [激活器下载地址](https://iceboxdoc.catchingnow.com/files/%E5%86%B0%E7%AE%B1%E6%BF%80%E6%B4%BB%E5%99%A8-Windows.zip)
  
 如果您不愿使用激活器，并且熟悉如何手动执行 ADB 命令的话，也可以手动执行： 
 ```
