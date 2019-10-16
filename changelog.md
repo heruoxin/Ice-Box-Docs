@@ -7,7 +7,7 @@
 
 冰箱 Ice Box 目前主要有以下几个分发渠道：
 
-- G [Google Play Sotre 渠道](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
+- G [Google Play Store 渠道](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
 - C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox)
 - M [其他国内商店渠道](https://sj.qq.com/myapp/detail.htm?apkName=com.catchingnow.icebox)
 - Beta [内测版渠道](https://t.me/iceboxapp)
