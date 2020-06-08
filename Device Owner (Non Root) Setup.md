@@ -2,6 +2,8 @@
 
 ### Device Owner (Non Root) Mode Setup
 
+This is a setup of how to grant [device owner (DPC)](https://developer.android.com/work/dpc/build-dpc) permission to Ice Box App. 
+
 1. Make sure your phone running Android  5.0+ and you know how to use [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) clearly.
 2. Go to "Settings - Accounts", remove ALL ACCOUNTS including your Google account.
 3. If multi-user or guest mode has been set on your device, also need to be closed or deleted
@@ -17,7 +19,7 @@
 - A: Please follow step 3 and remove the guest mode or multi app/private mode.
 
 - Q: There is "Device is managed by your organization" on my notification center after setting up. Why?
-- A: That is how Ice Box works.
+- A: That is how device owner mode works. 
 
 - Q: How to uninstall Ice Box?
 - A: Just select "Uninstall" in the settings of Ice Box.
