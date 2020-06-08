@@ -22,6 +22,6 @@ This is a setup of how to grant [device owner (DPC)](https://developer.android.c
 - A: That is how device owner mode works. 
 
 - Q: How to uninstall Ice Box?
-- A: Just select "Uninstall" in the settings of Ice Box.
+- A: Just select "Uninstall" in the settings of Ice Box. Please make sure all apps has been defrosted before uninstall.
 
 
