@@ -6,11 +6,13 @@ This is a setup of how to grant [device owner (DPC)](https://developer.android.c
 
 #### What is device owner?
 
-Device owner (DPC) is a part of Android enterprise functions which provides the ability to freeze and unfreeze the app without root.
+Device owner (DPC) is a part of Android enterprise functions which provides the ability to freeze and unfreeze any apps without root.
 
-The following is a setup tutorial:
+One device can only have one device owner. Please do not enable on the phone directly, it will not work.
 
-1. Make sure your phone running Android  5.0+ and you know how to use [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) clearly.
+To enable the device owner permission on your device, follow the instruction:
+
+1. Make sure your phone running Android  5.0+ and you know how to use [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) command line clearly.
 2. Go to "Settings - Accounts", remove ALL ACCOUNTS including your Google account.
 3. If multi-user or guest mode has been set on your device, also need to be closed or deleted
 4. Run "adb shell dpm set-device-owner com.catchingnow.icebox/.receiver.DPMReceiver " on your computer.
@@ -27,7 +29,5 @@ The following is a setup tutorial:
 - Q: There is "Device is managed by IceBox" on my notification center after setting up. Why?
 - A: That is how device owner mode works. This prompt cannot be removed due to Android system limitations but can be renamed in Ice Box's settings -> lab.
 
-- Q: How to uninstall Ice Box?
-- A: Just select "Uninstall" in the settings of Ice Box.The device owner permission will be released and Ice Box will be uninstalled at the same time. Please make sure all apps has been defrosted before uninstall.
-
-
+- Q: How to release the permission or uninstall Ice Box?
+- A: Just select "Uninstall" in the settings of Ice Box.The device owner permission will be released and Ice Box will be uninstalled at the same time. Please make sure all apps has been defrosted before uninstalling.
