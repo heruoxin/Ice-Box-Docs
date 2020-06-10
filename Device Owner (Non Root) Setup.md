@@ -2,13 +2,15 @@
 
 ### Device Owner (Non Root) Mode Setup
 
-This is a setup of how to grant [device owner (DPC)](https://developer.android.com/work/dpc/build-dpc) permission to Ice Box App. 
+This is a setup of how to use Ice Box  app in [device owner (DPC)](https://developer.android.com/work/dpc/build-dpc) mode without root permission.
+
+If your device already rooted, there is no need to use device owner mode. Just use the root mode.
 
 #### What is device owner?
 
 Device owner (DPC) is a part of Android enterprise functions which provides the ability to freeze and unfreeze any apps without root.
 
-One device can only have one device owner. Please do not enable on the phone directly, it will not work.
+One device can only have one device owner. Please do not enable the "device admin" permission on phone directly, it will not work.
 
 To enable the device owner permission on your device, follow the instruction:
 
