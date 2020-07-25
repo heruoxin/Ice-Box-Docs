@@ -39,6 +39,7 @@ jobs:
         npm install -g serverless
         serverless deploy --debug
       env: 
+        SERVERLESS_PLATFORM_VENDOR: tencent
         TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
         TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
     
