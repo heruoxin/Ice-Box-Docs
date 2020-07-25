@@ -1,0 +1,17 @@
+component: website
+name: iceboxdoc-catchingnow-cn
+
+inputs:
+  src:
+    src: ./_site
+    index: index.html
+  region: ap-guangzhou
+  bucketName: my-bucket
+  protocol: https
+  hosts:
+    - host: iceboxdoc.catchingnow.cn
+      https:
+        switch: on
+        http2: on
+        certInfo:
+          certId: ezejkT51
