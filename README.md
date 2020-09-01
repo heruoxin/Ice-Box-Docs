@@ -6,7 +6,7 @@
 
 如果您的设备已经 Root，则可以直接打开使用，如果没有 Root，请参考选择教程：
 
-有电脑？使用 [一键激活器](https://iceboxdoc.catchingnow.com/一键激活工具)（强烈推荐）或[在线版激活器](https://iceboxdoc.catchingnow.cn/%E7%BD%91%E9%A1%B5%E7%89%88%E6%BF%80%E6%B4%BB%E5%99%A8)
+有电脑？使用 [一键激活器](https://iceboxdoc.catchingnow.com/一键激活工具)（强烈推荐）或[在线版激活器](https://iceboxdoc.catchingnow.com/%E7%BD%91%E9%A1%B5%E7%89%88%E6%BF%80%E6%B4%BB%E5%99%A8)
 
 没有电脑？使用 [二维码激活](https://iceboxdoc.catchingnow.com/免%20Root%20免电脑设置)（需清手机数据，不推荐）
 
