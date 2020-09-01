@@ -36,7 +36,7 @@ jobs:
     
     - name: Fix file suffix
       run: |
-        for i in ./_site/* ; do cp $i $i".html" ; done
+        for i in `ls ./_site/ | grep .html`; do cp $i `echo "$i" | awk -F '.html' '{print $1}'`;done
     
     - name: Deploy serverless
       run: |
