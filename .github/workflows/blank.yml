@@ -34,6 +34,10 @@ jobs:
         bundle install
         bundle exec jekyll build
     
+    - name: Fix file suffix
+      run: |
+        for i in ./_site/* ; do cp $i $i".html" ; done
+    
     - name: Deploy serverless
       run: |
         npm install -g serverless
