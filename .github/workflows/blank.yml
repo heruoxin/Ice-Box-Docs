@@ -36,8 +36,7 @@ jobs:
     
     - name: Fix file suffix
       run: |
-        ls ./_site/*.html | while read i; do cp "$i" "$i"x ;done
-        rename 's/\.htmlx$//' ./_site/*.htmlx
+        ls ./_site/*.html | while read i; do cp "$i" "${i%.html}" ;done
         
     - name: Deploy serverless
       run: |
