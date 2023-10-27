@@ -21,7 +21,7 @@
  --- English Version ---
 
 ### How to Use?
-
+ 
 If your device has already been rooted please use Ice Box directly. If not please read the tutorial:
 
 Have computer? [Read this](https://iceboxdoc.catchingnow.com/Device%20Owner%20(Non%20Root)%20Setup) (Recommend).
