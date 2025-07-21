@@ -8,15 +8,21 @@
 冰箱 Ice Box 目前主要有以下几个分发渠道：
 
 - G [Google Play Store 渠道](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
-- C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox)
-- M [其他国内商店渠道](https://sj.qq.com/myapp/detail.htm?apkName=com.catchingnow.icebox)
-- Beta [内测版渠道](https://t.me/iceboxapp)
+- C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox) (目前酷安已关闭网页版下载，酷安 app 内可正常更新)
+- M 其他渠道 
 
-可在冰箱「设置 - 关于」界面看到具体的版本和渠道信息。不同渠道包的内容是一样的，国内商店渠道更新较慢，且有时受审核影响功能可能有阉割。建议从 Google Play 或酷安下载。
+您可以访问 [这里](https://iceboxdoc.catchingnow.cn/icebox_latest.apk) 下载最新版本 APK
+
+可在冰箱「设置 - 关于」界面看到具体的版本和渠道信息。不同渠道包的内容是一样的，商店渠道更新较慢，且有时受审核影响功能可能有阉割。建议从 Google Play 下载。
 
 注：以上列出的均为**分发渠道**，不是**支付渠道**。支付渠道取决于安装方式，从 Play Store 下载安装的，使用 Google 支付和验证；其他所有方式安装的，都使用支付宝或[其他支付方式](https://iceboxdoc.catchingnow.com/%E5%85%B6%E4%BB%96%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F)。
 
 ### 更新日志
+
+3.30.7
+- 对 MIUI/澎湃 OS，支持冻结更多系统组件
+- 升级 target SDK 35
+- 其他 Bug 修复和性能提升
 
 3.25.0
 - 添加 Shizuku 无线激活相关的说明引导
