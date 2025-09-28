@@ -8,8 +8,8 @@
 冰箱 Ice Box 目前主要有以下几个分发渠道：
 
 - G [Google Play Store 渠道](https://play.google.com/store/apps/details?id=com.catchingnow.icebox)
-- C [酷安渠道](https://coolapk.com/apk/com.catchingnow.icebox) (目前酷安已关闭网页版下载，酷安 app 内可正常更新)
-- M 其他渠道 
+- C 酷安渠道(目前酷安已关闭网页版下载，酷安 app 内可正常更新)
+- M 其他渠道，如小米市场
 
 您可以访问 [这里](https://iceboxdoc.catchingnow.cn/icebox_latest.apk) 下载最新版本 APK
 
@@ -18,6 +18,10 @@
 注：以上列出的均为**分发渠道**，不是**支付渠道**。支付渠道取决于安装方式，从 Play Store 下载安装的，使用 Google 支付和验证；其他所有方式安装的，都使用支付宝或[其他支付方式](https://iceboxdoc.catchingnow.com/%E5%85%B6%E4%BB%96%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F)。
 
 ### 更新日志
+
+3.30.10
+- 支持 16KB 内存
+- 小米市场审核合规要求
 
 3.30.9
 - 操作优化：第一次配对成功后，不再要求「USB 调试」一直开启
