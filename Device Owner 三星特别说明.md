@@ -20,7 +20,7 @@
 
 因此，三星用户请谨慎，谨慎，再谨慎考虑使用设备管理员免 Root 功能。
 
-推荐使用 Root，或[Shizuku Manager](https://iceboxdoc.catchingnow.com/%E4%BD%BF%E7%94%A8%20Shizuku%20Manager%20%E6%BF%80%E6%B4%BB%E5%86%B0%E7%AE%B1) 等模式。
+推荐使用 Root，或[Shizuku Manager](/%E4%BD%BF%E7%94%A8%20Shizuku%20Manager%20%E6%BF%80%E6%B4%BB%E5%86%B0%E7%AE%B1) 等模式。
 
 Shizuku Manager 模式免 Root，但重启需重新配置。
 

@@ -2,7 +2,7 @@
 
 ## 冰箱使用相关的常见问题
 
-（Engilish Version [here](https://iceboxdoc.catchingnow.com/FAQ))
+（Engilish Version [here](/FAQ))
 
 
 ### Root 问题
@@ -86,4 +86,4 @@
 
 ## 购买、支付问题
 
-请参见：[软件购买说明](https://iceboxdoc.catchingnow.com/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E)
+请参见：[软件购买说明](/%E8%BD%AF%E4%BB%B6%E8%B4%AD%E4%B9%B0%E8%AF%B4%E6%98%8E)

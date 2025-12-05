@@ -1,6 +1,6 @@
 <script src="/main.js?raw=true"></script>
 
-(中文版请点[此处](https://iceboxdoc.catchingnow.com/FAQ%20%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98))
+(中文版请点[此处](/FAQ%20%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98))
 
 - Q: It says "Failure to get root permision"?
 - A: Please make sure your device has been rooted then open SuperSU/SuperUser/KingRoot to grant root permission.
