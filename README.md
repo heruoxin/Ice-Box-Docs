@@ -1,4 +1,4 @@
-<script src="/main.js?raw=true"></script>
+<script src="/main.js?raw=true"></script.com>
 
 # 冰箱 Ice Box 教程大全
 
