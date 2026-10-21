@@ -112,6 +112,7 @@ ${icons.sprite()}
   };
   var m = /^\\/(zh-hans|zh-hant|ja)(\\/|$)/.exec(dec);
   var lang = (m && m[1]) || (S[stored] ? stored : detect());
+  if (route === 'theme' && raw.replace(/^\/theme\/?/, '') === '') { location.replace(S[(m && m[1]) || (S[stored] ? stored : detect())].urls.themes); return; }
   document.body.className = 'route-' + route;
   var android = /Android/i.test(navigator.userAgent);
   var code = route === 'theme' ? raw.replace(/^\\/theme\\/?/, '') : '';

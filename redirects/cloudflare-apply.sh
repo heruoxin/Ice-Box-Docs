@@ -29,12 +29,12 @@ zone=$(cf "$API/zones?name=$ZONE_NAME" | pick "r[0]['id']")
 account=$(cf "$API/zones/$zone" | pick "r['account']['id']")
 
 echo "== Single Redirect：$LEGACY_HOST/* -> $NEW_SITE/*"
-cf -X PUT "$API/zones/$zone/rulesets/phases/http_request_dynamic_redirect/entrypoint" --data "$(python3 - "$LEGACY_HOST" "$NEW_SITE" <<'PY'
+cf -X PUT "$API/zones/$zone/rulesets/phases/http_request_dynamic_redirect/entrypoint" --data "$(python3 - "$LEGACY_HOST" "$NEW_SITE" "$(dirname "$CSV")/single-redirect-expression.txt" <<'PY'
 import json, sys
-host, site = sys.argv[1:]
+host, site, expr_file = sys.argv[1:4]
 print(json.dumps({"rules": [{
   "description": "iceboxdoc -> icebox (keep path)",
-  "expression": f'(http.host eq "{host}")',
+  "expression": open(expr_file, encoding="utf-8").read().strip(),
   "action": "redirect",
   "action_parameters": {"from_value": {"status_code": 301, "preserve_query_string": True,
     "target_url": {"expression": f'concat("{site}", http.request.uri.path)'}}},

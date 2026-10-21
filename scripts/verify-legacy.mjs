@@ -20,7 +20,7 @@ const bad = (msg) => { failed++; console.log(`  FAIL  ${msg}`); };
 
 async function head(url) {
   const res = await fetch(url, { redirect: 'manual' });
-  const body = res.status === 200 && /text\/html/.test(res.headers.get('content-type') || '') ? await res.text() : '';
+  const body = [200, 404].includes(res.status) && /text\/html/.test(res.headers.get('content-type') || '') ? await res.text() : '';
   return { status: res.status, location: res.headers.get('location'), body, type: res.headers.get('content-type') };
 }
 
@@ -39,7 +39,8 @@ async function checkPage(oldPath, target) {
         // Path-preserving fallback rule: the stub on the new host must point to the target.
         const s = await head(r.location);
         const relTarget = target.replace(SITE.url, '');
-        if (s.status === 200 && s.body.includes(JSON.stringify(relTarget))) ok(`${decodeURI(url)} -> ${r.location} -> ${relTarget} (fallback rule + stub)`);
+        if ([200, 404].includes(s.status) && s.body.includes(JSON.stringify(relTarget))) ok(`${decodeURI(url)} -> ${r.location} -> ${relTarget} (fallback rule + ${s.status === 200 ? 'stub' : '404 router'})`);
+        else if ([301, 308].includes(s.status) && s.location && /^https?:\/\/icebox\.catchingnow\.com\/theme\/$/.test(s.location) && relTarget.endsWith('/themes/')) ok(`${decodeURI(url)} -> /theme/ -> theme gallery (landing page)`);
         else if ([301, 308].includes(s.status) && s.location && (s.location === target || s.location === relTarget)) ok(`${decodeURI(url)} -> ${r.location} -> ${s.location}`);
         else bad(`${decodeURI(url)} -> ${r.location} returned ${s.status} ${s.location || ''}, expected a stub pointing to ${relTarget}`);
       } else bad(`${decodeURI(url)} returned ${r.status} ${r.location || ''}, expected 301 -> ${target}`);

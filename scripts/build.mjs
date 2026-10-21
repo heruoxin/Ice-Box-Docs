@@ -9,6 +9,7 @@ import { loadDictionaries, loadMarkdownPages, loadTemplatePages, makeT, pagePath
 import { renderMarkdown, markdownTwin } from './lib/markdown.mjs';
 import { toHantDeep } from './lib/hant.mjs';
 import { writeStubs, legacyMap, bulkRedirectsCsv, legacyReport } from './lib/legacy.mjs';
+import { singleRedirectExpression } from './lib/single-redirect.mjs';
 import { twinHeader, homeTwin, llmsTxt, llmsFull, robotsTxt, sitemapXml } from './lib/ai.mjs';
 import { lintCopy, lintDict, checkLinks } from './lib/checks.mjs';
 import { Icons, faviconSvg, phoneMock } from '../src/templates/components.mjs';
@@ -185,6 +186,7 @@ html,body{margin:0;padding:0;width:1200px;height:630px;overflow:hidden;backgroun
 
 const stubCount = writeStubs(DIST, registry);
 writeFile(path.join(ROOT, 'redirects/cloudflare-bulk-redirects.csv'), bulkRedirectsCsv(registry));
+writeFile(path.join(ROOT, 'redirects/single-redirect-expression.txt'), singleRedirectExpression() + '\n');
 writeFile(path.join(ROOT, 'redirects/legacy-map.json'), JSON.stringify(legacyReport(registry), null, 2) + '\n');
 
 // ---------- SEO and AI files ----------
