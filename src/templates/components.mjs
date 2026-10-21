@@ -199,7 +199,7 @@ export function phoneMock(icons, opts) {
     ? `<button class="ib__fab" type="button" data-fab aria-label="${esc(opts.labels?.fab || 'Freeze')}">${arrowFab(icons)}</button>`
     : `<span class="ib__fab">${arrowFab(icons)}</span>`;
   const overlays = live
-    ? `<div class="toast" role="status"><span></span></div><div class="app-open" data-open><div class="app-open__bar"><button type="button" data-back aria-label="${esc(opts.labels?.back || 'Back')}">${icons.use('arrow-left')}</button><span class="app-open__title"></span></div><div class="app-open__body"><i></i><i></i><i></i><i></i></div></div><div class="off"><div class="off__inner"><div class="off__time">${clock}</div>${icons.use('lock')}</div></div><span class="tap" aria-hidden="true"></span>`
+    ? `<div class="toast" role="status"><span></span></div><div class="app-open" data-open><div class="app-open__bar"><button type="button" data-back aria-label="${esc(opts.labels?.back || 'Back')}">${icons.use('arrow-left')}</button><span class="app-open__title" aria-hidden="true"></span></div><div class="app-open__body"><i></i><i></i><i></i><i></i></div></div><div class="off"><div class="off__inner"><div class="off__time">${clock}</div>${icons.use('lock')}</div></div><span class="tap" aria-hidden="true"></span>`
     : '';
   return `<div class="device${live ? '' : ' device--static'}"${style}${opts.id ? ` id="${opts.id}"` : ''}${live ? ` data-device="${mode}"` : ' aria-hidden="true"'}>
 <div class="device__body">${power}<span class="device__key device__key--volume"></span>
