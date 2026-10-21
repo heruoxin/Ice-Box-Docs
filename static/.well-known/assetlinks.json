@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.catchingnow.icebox",
+      "sha256_cert_fingerprints": [
+        "82:F5:BE:70:2E:03:20:17:46:0C:A8:37:6F:6D:AB:D7:25:A9:E5:2D:D2:49:20:DD:5E:5D:7B:58:5F:BF:E1:B6"
+      ]
+    }
+  }
+]
