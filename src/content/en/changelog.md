@@ -10,6 +10,12 @@ related: download, features
 
 You can find your current version number and channel under "Settings > About" in Ice Box. For details on each distribution channel, and to download the latest APK, see the [download page](/download/#channels).
 
+## 3.30.11 {#v3-30-11}
+
+- Fixed layout issues on foldable devices
+- Support for Xiaomi's permission to read the app list
+- Wireless debugging no longer requires turning off VPN from the second pairing on
+
 ## 3.30.10 {#v3-30-10}
 
 - Support for 16 KB memory page size

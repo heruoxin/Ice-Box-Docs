@@ -35,7 +35,7 @@ Payments made by scanning the QR code cannot be refunded. If you paid with WeCha
 
 ### How many devices can the activation code activate? Can it be backed up? What if I flash my phone?
 
-Apart from the points below, a WeChat purchase comes with exactly the same rights as an [Alipay purchase](/purchase/). Please refer to the purchase guide.
+Apart from refunds, a WeChat QR code purchase comes with exactly the same rights as an [Alipay purchase](/purchase/). Please refer to the purchase guide.
 
 ### Why didn't the developer reply when I asked other questions through "Contact the payee"?
 
@@ -51,4 +51,4 @@ Because of Google's strict requirements, the version downloaded from Google Play
 
 ### A cracked version I downloaded online can't verify my payment?
 
-We recommend downloading the official app from [CoolApk](https://www.coolapk.com/) or from this site's [download page](/download/).
+We recommend downloading the official app from this site's [download page](/download/).

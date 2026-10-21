@@ -26,7 +26,7 @@ Ice Box is currently distributed mainly through these channels:
 - **Other channels**: For example, the Xiaomi app store.
 - **APK from this site**: Download the installer for the latest version directly from this page.
 
-You can find the exact version number and channel under "Settings > About" in Ice Box. The packages from every channel are identical. Updates through app stores may arrive later, and are sometimes held up by store review.
+You can find the exact version number and channel under "Settings > About" in Ice Box. The packages from every channel are identical.
 
 ## Download channels and payment {#payment}
 
