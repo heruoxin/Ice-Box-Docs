@@ -35,7 +35,14 @@ async function checkPage(oldPath, target) {
         else if (r.status === 301 && r.location) ok(`${decodeURI(url)} -> ${r.location} (directory redirect)`);
         else bad(`${decodeURI(url)} returned ${r.status}, expected a stub pointing to ${relTarget}`);
       } else if ([301, 308].includes(r.status) && r.location === target) ok(`${decodeURI(url)} -> ${target}`);
-      else bad(`${decodeURI(url)} returned ${r.status} ${r.location || ''}, expected 301 -> ${target}`);
+      else if ([301, 308].includes(r.status) && r.location === SITE.url + encodeURI('/' + variant)) {
+        // Path-preserving fallback rule: the stub on the new host must point to the target.
+        const s = await head(r.location);
+        const relTarget = target.replace(SITE.url, '');
+        if (s.status === 200 && s.body.includes(JSON.stringify(relTarget))) ok(`${decodeURI(url)} -> ${r.location} -> ${relTarget} (fallback rule + stub)`);
+        else if ([301, 308].includes(s.status) && s.location && (s.location === target || s.location === relTarget)) ok(`${decodeURI(url)} -> ${r.location} -> ${s.location}`);
+        else bad(`${decodeURI(url)} -> ${r.location} returned ${s.status} ${s.location || ''}, expected a stub pointing to ${relTarget}`);
+      } else bad(`${decodeURI(url)} returned ${r.status} ${r.location || ''}, expected 301 -> ${target}`);
     } catch (err) {
       bad(`${url}: ${err.message}`);
     }
@@ -70,7 +77,12 @@ if (!local) {
       r.status === 200 && /json/.test(r.type || '') ? ok(link.where) : bad(`${link.where}: ${r.status} ${r.type || ''}`);
     } else {
       const want = `${SITE.url}${kind === 'en' ? '' : '/' + kind}/${page}/`;
-      [301, 308].includes(r.status) && r.location === want ? ok(`${link.where}`) : bad(`${link.where}: ${r.status} ${r.location || ''}, expected ${want}`);
+      if ([301, 308].includes(r.status) && r.location === want) ok(`${link.where}`);
+      else if ([301, 308].includes(r.status) && r.location && r.location.startsWith(SITE.url + '/')) {
+        const s = await head(r.location).catch((e) => ({ status: 0, location: e.message, body: '' }));
+        const rel = want.replace(SITE.url, '');
+        (s.status === 200 && s.body.includes(JSON.stringify(rel))) || s.location === want ? ok(`${link.where} (via ${r.location})`) : bad(`${link.where}: ${r.status} ${r.location} then ${s.status} ${s.location || ''}, expected ${want}`);
+      } else bad(`${link.where}: ${r.status} ${r.location || ''}, expected ${want}`);
     }
   }
 }

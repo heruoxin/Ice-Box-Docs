@@ -65,30 +65,32 @@ export const THEMES = [
 // Pages of the old Jekyll site on iceboxdoc.catchingnow.com, keyed by their decoded path.
 // Each one keeps working: Cloudflare 301s it to the new page, and the new site carries a
 // redirect stub at the same path as a fallback.
+// bulk: gets an exact 301 in the Cloudflare Bulk Redirect list (Free plan allows 20 entries). The rest
+// reach the new host through one path-preserving Single Redirect rule and the stubs below take over.
 export const LEGACY_PAGES = [
-  { path: 'FAQ', lang: 'en', page: 'faq' },
-  { path: 'FAQ 常见问题', lang: 'zh-hans', page: 'faq' },
-  { path: 'Device Owner （免 root）模式设置', lang: 'zh-hans', page: 'guide/device-owner' },
-  { path: 'Device Owner (Non Root) Setup', lang: 'en', page: 'guide/device-owner' },
+  { path: 'FAQ', bulk: true, lang: 'en', page: 'faq' },
+  { path: 'FAQ 常见问题', bulk: true, lang: 'zh-hans', page: 'faq' },
+  { path: 'Device Owner （免 root）模式设置', bulk: true, lang: 'zh-hans', page: 'guide/device-owner' },
+  { path: 'Device Owner (Non Root) Setup', bulk: true, lang: 'en', page: 'guide/device-owner' },
   { path: 'Device Owner 三星特别说明', lang: 'zh-hans', page: 'guide/samsung-device-owner' },
-  { path: 'QR Code (Non Root) Setup', lang: 'en', page: 'guide/qr-code' },
-  { path: '免 Root 免电脑设置', lang: 'zh-hans', page: 'guide/qr-code' },
-  { path: '一键激活工具', lang: 'zh-hans', page: 'guide/activator' },
-  { path: '一键激活器（普通 ADB 模式）', lang: 'zh-hans', page: 'guide/adb' },
-  { path: 'Active with simple ADB mode', lang: 'en', page: 'guide/adb' },
-  { path: '网页版激活器', lang: 'zh-hans', page: 'guide/web-activator' },
+  { path: 'QR Code (Non Root) Setup', bulk: true, lang: 'en', page: 'guide/qr-code' },
+  { path: '免 Root 免电脑设置', bulk: true, lang: 'zh-hans', page: 'guide/qr-code' },
+  { path: '一键激活工具', bulk: true, lang: 'zh-hans', page: 'guide/activator' },
+  { path: '一键激活器（普通 ADB 模式）', bulk: true, lang: 'zh-hans', page: 'guide/adb' },
+  { path: 'Active with simple ADB mode', bulk: true, lang: 'en', page: 'guide/adb' },
+  { path: '网页版激活器', bulk: true, lang: 'zh-hans', page: 'guide/web-activator' },
   { path: '使用秋之盒激活', lang: 'zh-hans', page: 'guide/autumnbox' },
-  { path: '使用 Shizuku Manager 激活冰箱', lang: 'zh-hans', page: 'guide/shizuku' },
-  { path: 'Active with Shizuku ManagerManager', lang: 'en', page: 'guide/shizuku' },
+  { path: '使用 Shizuku Manager 激活冰箱', bulk: true, lang: 'zh-hans', page: 'guide/shizuku' },
+  { path: 'Active with Shizuku ManagerManager', bulk: true, lang: 'en', page: 'guide/shizuku' },
   { path: '更换主题', lang: 'zh-hans', page: 'themes' },
-  { path: 'theme', lang: 'zh-hans', page: 'themes', noStub: true },
-  { path: 'changelog', lang: 'zh-hans', page: 'changelog', noStub: true },
-  { path: '隐私策略', lang: 'zh-hans', page: 'privacy' },
-  { path: '软件购买说明', lang: 'zh-hans', page: 'purchase' },
-  { path: '其他支付方式', lang: 'zh-hans', page: 'purchase/wechat-pay' },
+  { path: 'theme', bulk: true, lang: 'zh-hans', page: 'themes', noStub: true },
+  { path: 'changelog', bulk: true, lang: 'zh-hans', page: 'changelog', noStub: true },
+  { path: '隐私策略', bulk: true, lang: 'zh-hans', page: 'privacy' },
+  { path: '软件购买说明', bulk: true, lang: 'zh-hans', page: 'purchase' },
+  { path: '其他支付方式', bulk: true, lang: 'zh-hans', page: 'purchase/wechat-pay' },
   { path: '支付宝兑换 Play 兑换码', lang: 'zh-hans', page: 'purchase' },
   { path: 'resellers/数码荔枝', lang: 'zh-hans', page: 'resellers/lizhi' },
-  { path: 'README', lang: 'zh-hans', page: 'guide' },
+  { path: 'README', bulk: true, lang: 'zh-hans', page: 'guide' },
 ];
 
 // Files the old site served directly. They stay at the same path on the new host.

@@ -46,17 +46,17 @@ export function writeStubs(dist, registry) {
 // Browsers send non-ASCII and spaces percent-encoded and keep ASCII parentheses as they are.
 const encodePath = (p) => encodeURI(p);
 
-// Cloudflare Bulk Redirects list (CSV import). One exact rule per old URL, plus a path-preserving fallback.
+// Cloudflare Bulk Redirects list (CSV import): one exact 301 per important old URL, within the
+// Free plan's 20 entries. Everything else is covered by the Single Redirect rule in redirects/README.md.
+export const BULK_LIMIT = 20;
 export function bulkRedirectsCsv(registry) {
   const map = legacyMap(registry);
+  const items = LEGACY_PAGES.filter((item) => item.bulk);
+  if (items.length > BULK_LIMIT) throw new Error(`Bulk redirect list has ${items.length} entries, the Cloudflare Free plan allows ${BULK_LIMIT}`);
   const rows = [['source_url', 'target_url', 'status_code', 'preserve_query_string', 'include_subdomains', 'subpath_matching', 'preserve_path_suffix']];
-  for (const item of LEGACY_PAGES) {
-    const target = SITE.url + map[item.path.normalize('NFC')];
-    for (const variant of [item.path, `${item.path}.html`]) {
-      rows.push([`${SITE.legacyHost}${encodePath('/' + variant)}`, target, '301', 'FALSE', 'FALSE', 'FALSE', 'FALSE']);
-    }
+  for (const item of items) {
+    rows.push([`${SITE.legacyHost}${encodePath('/' + item.path)}`, SITE.url + map[item.path.normalize('NFC')], '301', 'FALSE', 'FALSE', 'FALSE', 'FALSE']);
   }
-  rows.push([`${SITE.legacyHost}/`, `${SITE.url}/`, '301', 'TRUE', 'FALSE', 'TRUE', 'TRUE']);
   return rows.map((r) => r.map((c) => (/[",]/.test(c) ? `"${c.replace(/"/g, '""')}"` : c)).join(',')).join('\n') + '\n';
 }
 
