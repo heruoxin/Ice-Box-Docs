@@ -211,6 +211,7 @@ export default {
       download: '下载冰箱',
       gallery: '浏览更多主题',
       invalid: '无法识别这个主题链接，请确认链接是否完整。',
+      manual: '打不开？复制链接后点击冰箱「设置 - 从剪贴板导入」。',
       restore: '不喜欢的话，可以在冰箱设置的「主题和布局」中，点击右上角菜单还原默认。',
     },
     list: {
@@ -220,6 +221,7 @@ export default {
       copy: '复制链接',
       note: '还没有安装冰箱？',
       download: '下载冰箱',
+      manual: '打不开？复制链接后点击冰箱「设置 - 从剪贴板导入」。',
       invalid: '链接中缺少列表编号，请确认链接是否完整。',
     },
     notFound: {

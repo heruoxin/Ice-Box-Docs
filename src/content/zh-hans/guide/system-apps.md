@@ -22,6 +22,8 @@ related: use-cases/disable-preinstalled-apps, guide/devices, guide/qr-code
 
 冰箱支持分享和导入「可以安全冻结的系统 App 列表」。打开别人分享的列表链接后，冰箱会列出其中在你手机上可以冻结的 App，由你逐个确认后再冻结。
 
+也可以复制分享内容，点击冰箱「设置 - 从剪贴板导入」。
+
 
 ## 二维码设置后的预装软件 {#qr}
 

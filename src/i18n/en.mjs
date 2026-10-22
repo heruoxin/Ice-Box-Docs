@@ -211,6 +211,7 @@ export default {
       download: 'Download Ice Box',
       gallery: 'Browse more themes',
       invalid: 'This theme link could not be read. Please check that the link is complete.',
+      manual: 'Not opening? Copy the link, then tap "Import from clipboard" in Ice Box Settings.',
       restore: 'Changed your mind? In Ice Box settings, open Theme & Layout and restore the default from the menu.',
     },
     list: {
@@ -220,6 +221,7 @@ export default {
       copy: 'Copy link',
       note: 'Don\'t have Ice Box yet?',
       download: 'Download Ice Box',
+      manual: 'Not opening? Copy the link, then tap "Import from clipboard" in Ice Box Settings.',
       invalid: 'This link has no list ID. Please check that the link is complete.',
     },
     notFound: {

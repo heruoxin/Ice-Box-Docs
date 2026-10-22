@@ -14,7 +14,7 @@ priority: 0.6
 
 ## How to import {#import}
 
-On a phone with Ice Box installed, tap "Import to Ice Box", or copy the theme link and then open Ice Box. Ice Box recognizes the link and imports the theme automatically.
+On a phone with Ice Box installed, tap "Import to Ice Box", or copy the theme link and tap "Import from clipboard" in Ice Box Settings.
 
 Not happy with it? In Ice Box settings, open "Theme & Layout" and use the menu in the top right corner to restore the default.
 

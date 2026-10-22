@@ -14,7 +14,7 @@ priority: 0.6
 
 ## 読み込み方法 {#import}
 
-Ice Box をインストールしたスマートフォンで「Ice Box に読み込む」をタップするか、テーマのリンクをコピーしてから Ice Box を開くと、Ice Box が自動で認識して読み込みます。
+Ice Box をインストールしたスマートフォンで「Ice Box に読み込む」をタップするか、テーマのリンクをコピーして Ice Box の設定で「Import from clipboard」をタップします。
 
 気に入らない場合は、Ice Box の設定で「Theme & Layout」を開き、右上のメニューからデフォルトに戻せます。
 

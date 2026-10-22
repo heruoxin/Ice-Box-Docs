@@ -127,6 +127,10 @@ That is how the Smartisan system is designed. It is not related to Ice Box.
 
 Yes. Ice Box has separate layouts for tablets and landscape mode.
 
+### Does Ice Box read my clipboard? {#clipboard}
+
+Only once, when you tap "Import from clipboard" in Settings, to find a theme or freeze list link.
+
 ### Still have questions? {#contact}
 
 Send us an email with the "Feedback" option in the Ice Box app. If you can, include your phone model, system version and a screenshot of the problem.

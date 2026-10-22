@@ -211,6 +211,7 @@ export default {
       download: 'Ice Box をダウンロード',
       gallery: 'ほかのテーマを見る',
       invalid: 'このテーマのリンクを読み取れませんでした。リンクが途中で切れていないかご確認ください。',
+      manual: '開かない場合は、リンクをコピーして Ice Box の設定で「Import from clipboard」をタップします。',
       restore: '元に戻したいときは、Ice Box の設定で「Theme & Layout」を開き、右上のメニューからデフォルトに戻せます。',
     },
     list: {
@@ -220,6 +221,7 @@ export default {
       copy: 'リンクをコピー',
       note: 'Ice Box をまだお持ちでないですか？',
       download: 'Ice Box をダウンロード',
+      manual: '開かない場合は、リンクをコピーして Ice Box の設定で「Import from clipboard」をタップします。',
       invalid: 'リンクにリスト ID が含まれていません。リンクが途中で切れていないかご確認ください。',
     },
     notFound: {

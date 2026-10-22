@@ -22,6 +22,8 @@ Many phones come with a lot of pre-installed software and ad apps you'll never u
 
 Ice Box can share and import lists of system apps that are safe to freeze. When you open a list link someone shared, Ice Box lists the apps from it that can be frozen on your phone, and freezes them after you confirm each one.
 
+You can also copy the shared text and tap "Import from clipboard" in Ice Box Settings.
+
 
 ## Pre-installed apps after QR code setup {#qr}
 

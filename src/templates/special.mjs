@@ -63,6 +63,7 @@ export function renderSpecial(ctx, { legacyMap }) {
 <button class="btn btn--soft" type="button" data-copy-url data-copy-text="">${icons.use('copy')}<span data-s="copy"></span></button>
 </div>
 <p class="land__url" data-url></p>
+<p class="land__note" data-manual data-s="manual"></p>
 <p class="land__note" data-route="theme" data-s="restore"></p>
 <p class="land__note" data-invalid hidden></p>
 <p class="land__note"><span data-s="note"></span> <a href="#" data-u="download" data-s="download"></a><span data-route="theme"> · <a href="#" data-u="themes" data-s="gallery"></a></span></p>
@@ -165,7 +166,7 @@ ${icons.sprite()}
     open.href = android
       ? 'intent://' + scheme + '#Intent;scheme=icebox;package=${SITE.packageName};S.browser_fallback_url=${playFallback};end'
       : 'icebox://' + scheme;
-    if (!valid) open.setAttribute('hidden', '');
+    if (!valid) { open.setAttribute('hidden', ''); document.querySelector('[data-manual]').hidden = true; }
     var shown = location.href.replace(/#.*$/, '');
     document.querySelector('[data-url]').textContent = shown;
     document.querySelector('[data-copy-url]').setAttribute('data-copy-text', shown);

@@ -22,6 +22,8 @@ related: use-cases/disable-preinstalled-apps, guide/devices, guide/qr-code
 
 Ice Box では、「安全に凍結できるシステムアプリのリスト」を共有したり読み込んだりできます。ほかの人が共有したリストのリンクを開くと、そのうちお使いの端末で凍結できるアプリが Ice Box に一覧表示されます。1 つずつ確認してから凍結できます。
 
+共有された内容をコピーして、Ice Box の設定で「Import from clipboard」をタップしても読み込めます。
+
 
 ## QR コードで設定した端末のプリインストールアプリ {#qr}
 
