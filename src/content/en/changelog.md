@@ -12,11 +12,7 @@ You can find your current version number and channel under "Settings > About" in
 
 ## 3.30.14 {#v3-30-14}
 
-- New languages: Spanish, Portuguese, French, German, Indonesian, Turkish, Vietnamese and Japanese
-- Ice Box no longer reads the clipboard automatically; import themes and lists with "Import from clipboard" in Settings
-- Fixed Google Play purchases that sometimes did not unlock Pro, including payments that complete later
-- Android 17: the Wireless debugging pairing wizard no longer gets stuck when the USB debugging status cannot be read
-- Improved Wireless debugging pairing compatibility
+- Support for Android 17 and improved Wireless debugging compatibility
 
 ## 3.30.11 {#v3-30-11}
 

@@ -12,11 +12,8 @@ Vous trouverez le numéro de votre version et son canal de distribution dans «�
 
 ## 3.30.14 {#v3-30-14}
 
-- Nouvelles langues : espagnol, portugais, français, allemand, indonésien, turc, vietnamien et japonais
-- Ice Box ne lit plus automatiquement le presse-papiers ; importez les thèmes et les listes avec « Importer depuis le presse-papiers » dans les paramètres
-- Correction des achats Google Play qui ne débloquaient parfois pas Pro, y compris les paiements finalisés plus tard
-- Android 17 : l'assistant d'association du Débogage sans fil ne reste plus bloqué lorsque l'état du Débogage USB ne peut pas être lu
-- Amélioration de la compatibilité de l'association du Débogage sans fil
+- Désormais disponible en français
+- Prise en charge d'Android 17 et meilleure compatibilité du Débogage sans fil
 
 ## 3.30.11 {#v3-30-11}
 

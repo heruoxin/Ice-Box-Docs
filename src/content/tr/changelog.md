@@ -12,11 +12,8 @@ Mevcut sürüm numaranızı ve kanalınızı Ice Box'ta "Ayarlar > Hakkında" b�
 
 ## 3.30.14 {#v3-30-14}
 
-- Yeni diller: İspanyolca, Portekizce, Fransızca, Almanca, Endonezce, Türkçe, Vietnamca ve Japonca
-- Ice Box artık panoyu otomatik olarak okumuyor; temaları ve listeleri Ayarlar'daki "Panodan içe aktar" ile içe aktarın
-- Pro'nun bazen açılmadığı Google Play satın alımları düzeltildi; sonradan tamamlanan ödemeler de dahil
-- Android 17: USB hata ayıklama durumu okunamadığında Kablosuz hata ayıklama eşleme sihirbazı artık takılmıyor
-- Kablosuz hata ayıklama eşlemesinin uyumluluğu iyileştirildi
+- Türkçe dil desteği eklendi
+- Android 17 desteği ve geliştirilmiş Kablosuz hata ayıklama uyumluluğu
 
 ## 3.30.11 {#v3-30-11}
 

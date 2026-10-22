@@ -12,11 +12,8 @@ Bạn có thể xem số phiên bản và kênh phát hành hiện tại trong "
 
 ## 3.30.14 {#v3-30-14}
 
-- Ngôn ngữ mới: tiếng Tây Ban Nha, Bồ Đào Nha, Pháp, Đức, Indonesia, Thổ Nhĩ Kỳ, Việt và Nhật
-- Ice Box không còn tự động đọc bảng nhớ tạm; hãy nhập chủ đề và danh sách bằng "Nhập từ bảng nhớ tạm" trong Cài đặt
-- Sửa lỗi mua hàng trên Google Play đôi khi không mở khóa Pro, bao gồm cả các khoản thanh toán hoàn tất sau
-- Android 17: trình hướng dẫn ghép nối Gỡ lỗi không dây không còn bị treo khi không đọc được trạng thái Gỡ lỗi qua USB
-- Cải thiện khả năng tương thích khi ghép nối Gỡ lỗi không dây
+- Đã hỗ trợ tiếng Việt
+- Hỗ trợ Android 17 và cải thiện khả năng tương thích của Gỡ lỗi không dây
 
 ## 3.30.11 {#v3-30-11}
 
