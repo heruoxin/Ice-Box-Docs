@@ -1,4 +1,4 @@
-import { LANGS, LANG, SITE } from '../../scripts/lib/config.mjs';
+import { DETECT_RULES, LANGS, LANG, SITE } from '../../scripts/lib/config.mjs';
 import { pagePath, absolute } from '../../scripts/lib/pages.mjs';
 import { esc } from '../../scripts/lib/util.mjs';
 
@@ -120,7 +120,7 @@ ${header(ctx, tone)}
 ${body}
 </main>
 ${footer(ctx)}
-<div class="lang-hint" data-lang-hint role="region" aria-live="polite" data-alts="${esc(JSON.stringify(alts))}" data-hints="${esc(JSON.stringify(ctx.langHints))}" hidden></div>
+<div class="lang-hint" data-lang-hint role="region" aria-live="polite" data-alts="${esc(JSON.stringify(alts))}" data-hints="${esc(JSON.stringify(ctx.langHints))}" data-detect="${esc(JSON.stringify(DETECT_RULES))}" hidden></div>
 ${ctx.icons.sprite()}
 <script src="${assets.js}" defer></script>
 </body>

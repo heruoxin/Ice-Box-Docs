@@ -1,6 +1,6 @@
 # 冰箱 Ice Box 官网
 
-[icebox.catchingnow.com](https://icebox.catchingnow.com/) 的源码。纯静态站点，由 `scripts/build.mjs` 生成到 `dist/`，通过 GitHub Actions 部署到 GitHub Pages。提供英文（根路径）、简体中文（`/zh-hans/`）、繁体中文（`/zh-hant/`）和日文（`/ja/`）。
+[icebox.catchingnow.com](https://icebox.catchingnow.com/) 的源码。纯静态站点，由 `scripts/build.mjs` 生成到 `dist/`，通过 GitHub Actions 部署到 GitHub Pages。提供英文（根路径）、简体中文（`/zh-hans/`）、繁体中文（`/zh-hant/`）、日文（`/ja/`），以及西班牙语（`/es/`）、葡萄牙语（巴西，`/pt-br/`）、法语（`/fr/`）、德语（`/de/`）、印尼语（`/id/`）、土耳其语（`/tr/`）、越南语（`/vi/`）。语言列表在 `scripts/lib/config.mjs` 的 `LANGS`。
 
 ## 快速开始
 
@@ -22,7 +22,7 @@ node scripts/verify-legacy.mjs --local    # 验证本地构建中的旧链接兜
 | --- | --- |
 | `src/content/<语言>/` | 页面正文（Markdown）。`zh-hans` 是源语言 |
 | `src/content/zh-hant/` | 可选。默认由简体自动转换（OpenCC 台湾用语，再按 `scripts/lib/hant.mjs` 的术语表对齐 App 繁体界面）；放入同名文件即可手工覆盖 |
-| `src/i18n/` | 首页与界面文案：`en`、`zh-hans`、`ja`；`zh-hant.mjs` 只写需要覆盖的词；`llms.mjs` 是 llms.txt 的文案 |
+| `src/i18n/` | 首页与界面文案：每种语言一个 `<语言>.mjs`；`zh-hant.mjs` 只写需要覆盖的词；`llms.mjs` 是 en / zh-hans / ja 的 llms.txt 文案，其他语言在 `llms-<语言>.mjs` |
 | `src/templates/` | 页面模板：首页、文档页、短代码组件、`/theme/` `/list/` 落地页与 404 |
 | `src/assets/` | CSS、JS、图片 |
 | `static/` | 原样复制到站点根目录：`CNAME`、`.well-known/assetlinks.json`、旧站的 APK、激活器与图片 |
@@ -34,7 +34,7 @@ node scripts/verify-legacy.mjs --local    # 验证本地构建中的旧链接兜
 - 不使用破折号（「——」「—」「–」）和 emoji，构建会自动检查。
 - 中文与英文、数字之间留半角空格；界面上的文字用「」。
 - 不新增承诺性内容；涉及购买条款时与 App 内说明保持一致。
-- 新增页面：先在 `src/content/zh-hans/` 写 Markdown，再补 `en`、`ja` 版本。`node scripts/lint-content.mjs en` 会检查译文的 front matter、锚点、短代码、站内链接和代码块是否与源文件一致。
+- 新增页面：先在 `src/content/zh-hans/` 写 Markdown，再补 `en` 和其他语言版本（缺少的语言会回落到英文页面）。`node scripts/lint-content.mjs en` 会检查译文的 front matter、锚点、短代码、站内链接和代码块是否与源文件一致。
 
 ### Front matter
 

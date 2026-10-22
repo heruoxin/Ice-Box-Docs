@@ -17,7 +17,8 @@ export function absolute(p) {
 // UI dictionaries. zh-hant is derived from zh-hans unless src/i18n/zh-hant.mjs overrides a key.
 export async function loadDictionaries() {
   const dict = {};
-  for (const code of ['en', 'zh-hans', 'ja']) {
+  for (const { code } of LANGS) {
+    if (code === 'zh-hant') continue;
     dict[code] = (await import(path.join(SRC, 'i18n', `${code}.mjs`))).default;
   }
   dict['zh-hant'] = deepMerge(toHantDeep(dict['zh-hans']), await optionalImport(path.join(SRC, 'i18n', 'zh-hant.mjs')));
@@ -56,7 +57,7 @@ export function makeT(dict, lang) {
 export function loadMarkdownPages() {
   const pages = [];
   const byLang = {};
-  for (const code of ['en', 'zh-hans', 'ja', 'zh-hant']) {
+  for (const { code } of LANGS) {
     const dir = path.join(SRC, 'content', code);
     byLang[code] = new Map(
       walk(dir, (f) => f.endsWith('.md')).map((file) => [path.relative(dir, file).replace(/\.md$/, '').replace(/\\/g, '/'), file]),
@@ -118,7 +119,7 @@ export class Registry {
     return this.map.has(`${lang}:${id}`);
   }
   url(lang, id, hash = '') {
-    const page = this.get(lang, id) || this.get('zh-hans', id) || this.get('en', id);
+    const page = this.get(lang, id) || (lang.startsWith('zh') ? this.get('zh-hans', id) || this.get('en', id) : this.get('en', id) || this.get('zh-hans', id));
     if (!page) throw new Error(`Unknown page "${id}"`);
     return pagePath(page.lang, page.slug) + hash;
   }

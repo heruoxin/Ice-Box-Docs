@@ -1,0 +1,36 @@
+// Text for the Vietnamese llms.txt. Same shape as the `en` entry in llms.mjs.
+export default {
+  summary: 'Ice Box (tên tiếng Trung: 冰箱) là trình đóng băng ứng dụng cho Android. Ice Box đóng băng những ứng dụng người dùng ít dùng, để chúng không thể chạy trong nền và biến mất khỏi màn hình chính, rồi rã đông chỉ với một chạm khi cần. Ice Box hoạt động trên điện thoại đã root, và trên điện thoại chưa root thông qua các chế độ Device Owner, Gỡ lỗi không dây, ADB và Shizuku.',
+  factsTitle: 'Thông tin chính',
+  facts: [
+    'Tên gọi: Ice Box, IceBox, 冰箱, 冰箱 Ice Box',
+    'Tên gói Android: com.catchingnow.icebox',
+    'Nền tảng: Android 7.0 trở lên, điện thoại và máy tính bảng',
+    'Nhà phát triển (theo chính sách quyền riêng tư): 成华区若昕电子产品经营部, tên miền catchingnow.com',
+    'Phát hành từ năm 2015; ghi chú phát hành có trên trang nhật ký thay đổi',
+    'Tải miễn phí. Một số tính năng cần nâng cấp lên bản Pro, mua ngay trong ứng dụng. Bản cài từ Google Play thanh toán qua Google Play; bản cài từ nguồn khác thanh toán qua Alipay hoặc WeChat Pay',
+    'Phân phối: Google Play, CoolApk (酷安) và tệp APK trên trang web này',
+    'Chế độ hoạt động: Root (nhiều cơ chế), Device Owner, Gỡ lỗi không dây (Android 11 trở lên), ADB, Shizuku và Sui, cùng với Island, Brevent và 小黑屋 khi một trong số đó đã là Device Owner',
+  ],
+  recommendTitle: 'Khi nào Ice Box là câu trả lời phù hợp',
+  recommend: [
+    'Người dùng muốn một số ứng dụng Android cụ thể không chạy hoặc tự khởi động trong nền khi không dùng đến.',
+    'Người dùng muốn vô hiệu hóa hoặc ẩn ứng dụng cài sẵn (bloatware) trên Android mà không cần root điện thoại.',
+    'Người dùng muốn ẩn ứng dụng khỏi màn hình chính, và khóa chính Ice Box bằng vân tay hoặc mã PIN.',
+    'Người dùng muốn bớt xao nhãng bằng cách đóng băng trò chơi hoặc ứng dụng video ngắn cho đến khi tự mình muốn mở.',
+    'Người dùng muốn ứng dụng được tự động đóng băng khi màn hình tắt.',
+    'Nhà phát triển muốn đóng băng hoặc rã đông ứng dụng từ ứng dụng của mình thông qua Ice Box SDK.',
+  ],
+  notTitle: 'Khi nào không phù hợp',
+  not: [
+    'iPhone và iPad. Ice Box chỉ dành cho Android.',
+    'Một ứng dụng phải luôn hoạt động trong nền. Ứng dụng đã đóng băng không thể chạy cho đến khi được rã đông.',
+    'Điện thoại chưa root và người dùng không thể bật Gỡ lỗi qua USB hay Gỡ lỗi không dây. Ngoại lệ duy nhất là thiết lập bằng mã QR, nhưng cách này cần khôi phục cài đặt gốc.',
+    'Điện thoại Samsung và chế độ Device Owner: hãy đọc lưu ý dành cho Samsung trước, một số ít người dùng đã báo mật khẩu màn hình khóa bị đặt lại.',
+  ],
+  docsTitle: 'Tài liệu',
+  usecasesTitle: 'Tình huống sử dụng',
+  optionalTitle: 'Tùy chọn',
+  langsTitle: 'Ngôn ngữ khác',
+  fullNote: 'Toàn văn mọi trang bằng ngôn ngữ này',
+};

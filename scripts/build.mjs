@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import QRCode from 'qrcode';
-import { SITE, LANGS, LANG } from './lib/config.mjs';
+import { SITE, LANGS, LANG, DETECT_JS } from './lib/config.mjs';
 import { ROOT, SRC, DIST, writeFile, readText, copyDir, hash, walk, stripTags, truncate } from './lib/util.mjs';
 import { loadDictionaries, loadMarkdownPages, loadTemplatePages, makeT, pagePath, absolute, Registry } from './lib/pages.mjs';
 import { renderMarkdown, markdownTwin } from './lib/markdown.mjs';
@@ -31,6 +31,11 @@ fs.mkdirSync(DIST, { recursive: true });
 const dict = await loadDictionaries();
 const llmsText = (await import(path.join(SRC, 'i18n', 'llms.mjs'))).default;
 llmsText['zh-hant'] = toHantDeep(llmsText['zh-hans']);
+// Newer languages keep their llms.txt text in src/i18n/llms-<code>.mjs.
+for (const { code } of LANGS) {
+  const file = path.join(SRC, 'i18n', `llms-${code}.mjs`);
+  if (!llmsText[code] && fs.existsSync(file)) llmsText[code] = (await import(file)).default;
+}
 const registry = new Registry([...loadTemplatePages(), ...loadMarkdownPages()]);
 const langHints = Object.fromEntries(LANGS.map((l) => [l.code, dict[l.code].langHint]));
 
@@ -133,7 +138,8 @@ for (const page of registry.pages) {
   let html;
   if (page.template === 'home') {
     if (page.lang === 'en') {
-      ctx.headScript = `<script>(function(){try{var m={'zh-hans':'/zh-hans/','zh-hant':'/zh-hant/','ja':'/ja/'};var c=localStorage.getItem('icebox-lang');if(c){if(m[c])location.replace(m[c]);return}var l=String((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();var t=/^zh-(tw|hk|mo)|^zh-hant/.test(l)?m['zh-hant']:/^zh/.test(l)?m['zh-hans']:/^ja/.test(l)?m.ja:'';if(t)location.replace(t)}catch(e){}})()</script>`;
+      const m = JSON.stringify(Object.fromEntries(LANGS.filter((l) => l.path).map((l) => [l.code, `/${l.path}/`])));
+      ctx.headScript = `<script>(function(){try{var m=${m},r=${DETECT_JS};var c=localStorage.getItem('icebox-lang');if(c){if(m[c])location.replace(m[c]);return}var l=String((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();for(var i=0;i<r.length;i++)if(r[i][1].test(l)){if(m[r[i][0]])location.replace(m[r[i][0]]);return}}catch(e){}})()</script>`;
     }
     html = renderHome(ctx);
     twins.set(`${page.lang}:${page.id}`, homeTwin(ctx));
@@ -178,7 +184,7 @@ for (const { code } of LANGS) {
 html,body{margin:0;padding:0;width:1200px;height:630px;overflow:hidden;background:#0277bd;color:#fff}
 .og{position:relative;width:1200px;height:630px}
 .og .brand{position:absolute;left:80px;top:64px;font-size:24px}.og .brand img{width:40px;height:40px}
-.og h1{position:absolute;left:80px;top:196px;width:600px;font-size:${code === 'en' ? 72 : code === 'ja' ? 68 : 76}px}
+.og h1{position:absolute;left:80px;top:196px;width:600px;font-size:${code === 'ja' ? 68 : code.startsWith('zh') ? 76 : 72}px}
 .og .device{position:absolute;right:120px;top:72px;--shadow:0 1px 2px rgba(1,50,86,.24),0 14px 28px -10px rgba(1,50,86,.4),0 44px 88px -30px rgba(1,50,86,.5)}
 </style></head><body><div class="og"><span class="brand"><img src="/assets/img/icon-192.png" alt="">${t('meta.brandHtml')}</span><h1>${title}</h1>${phone}</div>${icons.sprite()}</body></html>`;
   writeFile(path.join(DIST, '_og', `${code}.html`), html);

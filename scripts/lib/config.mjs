@@ -19,12 +19,25 @@ export const SITE = {
 };
 
 // `path` is the URL prefix. English is the x-default and lives at the root.
+// `detect` matches a lower-cased browser language tag; the first match wins, so zh-hant comes before zh-hans.
 export const LANGS = [
-  { code: 'en', path: '', htmlLang: 'en', hreflang: ['en'], label: 'English', short: 'EN', og: 'en_US' },
-  { code: 'zh-hans', path: 'zh-hans', htmlLang: 'zh-Hans', hreflang: ['zh-Hans', 'zh-CN', 'zh-SG'], label: '简体中文', short: '简', og: 'zh_CN' },
-  { code: 'zh-hant', path: 'zh-hant', htmlLang: 'zh-Hant', hreflang: ['zh-Hant', 'zh-TW', 'zh-HK', 'zh-MO'], label: '繁體中文', short: '繁', og: 'zh_TW' },
-  { code: 'ja', path: 'ja', htmlLang: 'ja', hreflang: ['ja'], label: '日本語', short: '日', og: 'ja_JP' },
+  { code: 'en', path: '', htmlLang: 'en', hreflang: ['en'], label: 'English', short: 'EN', og: 'en_US', detect: '^en' },
+  { code: 'zh-hans', path: 'zh-hans', htmlLang: 'zh-Hans', hreflang: ['zh-Hans', 'zh-CN', 'zh-SG'], label: '简体中文', short: '简', og: 'zh_CN', detect: '^zh' },
+  { code: 'zh-hant', path: 'zh-hant', htmlLang: 'zh-Hant', hreflang: ['zh-Hant', 'zh-TW', 'zh-HK', 'zh-MO'], label: '繁體中文', short: '繁', og: 'zh_TW', detect: '^zh-(tw|hk|mo)|^zh-hant' },
+  { code: 'ja', path: 'ja', htmlLang: 'ja', hreflang: ['ja'], label: '日本語', short: '日', og: 'ja_JP', detect: '^ja' },
+  { code: 'es', path: 'es', htmlLang: 'es', hreflang: ['es'], label: 'Español', short: 'ES', og: 'es_LA', detect: '^es' },
+  { code: 'pt-br', path: 'pt-br', htmlLang: 'pt-BR', hreflang: ['pt-BR', 'pt'], label: 'Português (Brasil)', short: 'PT', og: 'pt_BR', detect: '^pt' },
+  { code: 'fr', path: 'fr', htmlLang: 'fr', hreflang: ['fr'], label: 'Français', short: 'FR', og: 'fr_FR', detect: '^fr' },
+  { code: 'de', path: 'de', htmlLang: 'de', hreflang: ['de'], label: 'Deutsch', short: 'DE', og: 'de_DE', detect: '^de' },
+  { code: 'id', path: 'id', htmlLang: 'id', hreflang: ['id'], label: 'Bahasa Indonesia', short: 'ID', og: 'id_ID', detect: '^(id|in)(-|$)' },
+  { code: 'tr', path: 'tr', htmlLang: 'tr', hreflang: ['tr'], label: 'Türkçe', short: 'TR', og: 'tr_TR', detect: '^tr' },
+  { code: 'vi', path: 'vi', htmlLang: 'vi', hreflang: ['vi'], label: 'Tiếng Việt', short: 'VI', og: 'vi_VN', detect: '^vi' },
 ];
+
+// Browser-side language detection, shared by the home page redirect, 404.html and the language hint.
+const DETECT_ORDER = ['zh-hant', ...LANGS.map((l) => l.code).filter((c) => c !== 'zh-hant')];
+export const DETECT_RULES = DETECT_ORDER.map((c) => [c, LANGS.find((l) => l.code === c).detect]);
+export const DETECT_JS = `[${DETECT_RULES.map(([c, re]) => `['${c}',/${re}/]`).join(',')}]`;
 
 export const LANG = Object.fromEntries(LANGS.map((l) => [l.code, l]));
 

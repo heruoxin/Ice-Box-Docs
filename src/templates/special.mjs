@@ -1,4 +1,4 @@
-import { LANGS, SITE } from '../../scripts/lib/config.mjs';
+import { DETECT_JS, LANGS, SITE } from '../../scripts/lib/config.mjs';
 import { pagePath } from '../../scripts/lib/pages.mjs';
 import { esc } from '../../scripts/lib/util.mjs';
 import { phoneMock } from './components.mjs';
@@ -102,16 +102,14 @@ ${icons.sprite()}
   try { stored = localStorage.getItem('icebox-lang'); } catch (e) {}
   var detect = function () {
     var ls = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']);
+    var r = ${DETECT_JS};
     for (var i = 0; i < ls.length; i++) {
       var l = String(ls[i]).toLowerCase();
-      if (/^zh-(tw|hk|mo)|^zh-hant/.test(l)) return 'zh-hant';
-      if (/^zh/.test(l)) return 'zh-hans';
-      if (/^ja/.test(l)) return 'ja';
-      if (/^en/.test(l)) return 'en';
+      for (var j = 0; j < r.length; j++) if (r[j][1].test(l)) return r[j][0];
     }
     return 'en';
   };
-  var m = /^\\/(zh-hans|zh-hant|ja)(\\/|$)/.exec(dec);
+  var m = /^\\/(${LANGS.filter((l) => l.path).map((l) => l.path).join('|')})(\\/|$)/.exec(dec);
   var lang = (m && m[1]) || (S[stored] ? stored : detect());
   if (route === 'theme' && raw.replace(/^\/theme\/?/, '') === '') { location.replace(S[(m && m[1]) || (S[stored] ? stored : detect())].urls.themes); return; }
   document.body.className = 'route-' + route;

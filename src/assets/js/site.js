@@ -43,11 +43,10 @@
   if (hint && hint.dataset.alts) {
     const preferred = (() => {
       const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']).map((l) => String(l).toLowerCase());
+      const rules = JSON.parse(hint.dataset.detect || '[]').map(([code, re]) => [code, new RegExp(re)]);
       for (const l of langs) {
-        if (/^zh-(tw|hk|mo)|^zh-hant/.test(l)) return 'zh-hant';
-        if (l.startsWith('zh')) return 'zh-hans';
-        if (l.startsWith('ja')) return 'ja';
-        if (l.startsWith('en')) return 'en';
+        const hit = rules.find(([, re]) => re.test(l));
+        if (hit) return hit[0];
       }
       return 'en';
     })();
@@ -255,7 +254,7 @@
       const hm = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
       $$('.sb__time, .home__clock, .off__time', this.root).forEach((el) => { el.textContent = hm; });
       try {
-        const locale = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-TW', ja: 'ja-JP' }[pageLang] || 'en-US';
+        const locale = { 'zh-hans': 'zh-CN', 'zh-hant': 'zh-TW' }[pageLang] || document.documentElement.lang || 'en-US';
         $('.home__date', this.root).textContent = new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric', weekday: 'long' }).format(now);
       } catch { /* keep the rendered date */ }
     }

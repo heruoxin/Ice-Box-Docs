@@ -6,12 +6,13 @@ const { chromium } = await import('playwright').catch(() => {
   process.exit(1);
 });
 import path from 'node:path';
+import { LANGS } from './lib/config.mjs';
 import { SRC } from './lib/util.mjs';
 
 const base = process.argv[2] || 'http://localhost:4000';
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
-for (const lang of ['en', 'zh-hans', 'zh-hant', 'ja']) {
+for (const { code: lang } of LANGS) {
   await page.goto(`${base}/_og/${lang}.html`, { waitUntil: 'networkidle' });
   await page.waitForTimeout(400);
   await page.screenshot({ path: path.join(SRC, 'assets', 'img', `og-${lang}.png`), type: 'png' });

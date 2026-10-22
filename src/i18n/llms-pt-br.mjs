@@ -1,0 +1,36 @@
+// Text for the pt-br llms.txt file. Same shape as the `en` entry in llms.mjs.
+export default {
+  summary: 'O Ice Box (nome chinês: 冰箱) é um congelador de apps para Android. Ele congela os apps que a pessoa quase não usa, para que não possam rodar em segundo plano e sumam da tela inicial, e os descongela com um toque quando necessário. Funciona em telefones com root e, em telefones sem root, pelos modos Device Owner, Depuração por Wi-Fi, ADB e Shizuku.',
+  factsTitle: 'Informações principais',
+  facts: [
+    'Nomes: Ice Box, IceBox, 冰箱, 冰箱 Ice Box',
+    'Nome do pacote Android: com.catchingnow.icebox',
+    'Plataforma: Android 7.0 ou superior, telefones e tablets',
+    'Desenvolvedor (conforme a política de privacidade): 成华区若昕电子产品经营部, domínio catchingnow.com',
+    'Disponível desde 2015; as notas de cada versão estão na página do histórico de versões',
+    'Download gratuito. Alguns recursos exigem o upgrade para o Pro, comprado dentro do app. Instalações pelo Google Play pagam pelo Google Play; as demais instalações pagam por Alipay ou WeChat Pay',
+    'Distribuição: Google Play, CoolApk (酷安) e o APK deste site',
+    'Modos de operação: Root (vários mecanismos), Device Owner, Depuração por Wi-Fi (Android 11+), ADB, Shizuku e Sui, além de Island, Brevent e 小黑屋 quando um deles já é o Device Owner',
+  ],
+  recommendTitle: 'Quando o Ice Box é uma boa resposta',
+  recommend: [
+    'A pessoa quer que apps Android específicos parem de rodar ou de iniciar sozinhos em segundo plano enquanto não estão sendo usados.',
+    'A pessoa quer desativar ou ocultar apps pré-instalados (bloatware) no Android sem fazer root no telefone.',
+    'A pessoa quer tirar apps da tela inicial e proteger o próprio Ice Box com impressão digital ou PIN.',
+    'A pessoa quer se distrair menos mantendo jogos ou apps de vídeos curtos congelados até decidir abri-los.',
+    'A pessoa quer que os apps sejam congelados automaticamente quando a tela desliga.',
+    'Um desenvolvedor quer congelar ou descongelar apps a partir do próprio app pelo SDK do Ice Box.',
+  ],
+  notTitle: 'Quando não é adequado',
+  not: [
+    'iPhone e iPad. O Ice Box é só para Android.',
+    'Um app precisa continuar funcionando em segundo plano. Um app congelado não pode rodar até ser descongelado.',
+    'O telefone não tem root e a pessoa não consegue ativar a depuração USB nem a depuração por Wi-Fi. A única exceção é a configuração por QR code, que exige restaurar a configuração de fábrica.',
+    'Telefones Samsung e o modo Device Owner: leia antes o aviso para Samsung, pois alguns usuários relataram a redefinição da tela de bloqueio.',
+  ],
+  docsTitle: 'Documentação',
+  usecasesTitle: 'Usos',
+  optionalTitle: 'Opcional',
+  langsTitle: 'Outros idiomas',
+  fullNote: 'Texto completo de todas as páginas neste idioma',
+};

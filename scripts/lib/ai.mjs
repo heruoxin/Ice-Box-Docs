@@ -44,7 +44,7 @@ export function llmsTxt(lang, registry, L) {
   const optional = pages.filter((p) => ['changelog', 'privacy', 'resellers/lizhi'].includes(p.id));
   const prefix = LANG[lang].path ? `/${LANG[lang].path}` : '';
   const lines = [
-    `# Ice Box${lang.startsWith('zh') ? '（冰箱）' : lang === 'en' ? ' (冰箱)' : '（冰箱）'}`,
+    `# Ice Box${lang.startsWith('zh') || lang === 'ja' ? '（冰箱）' : ' (冰箱)'}`,
     '',
     `> ${L.summary}`,
     '',
