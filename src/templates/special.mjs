@@ -111,7 +111,7 @@ ${icons.sprite()}
   };
   var m = /^\\/(${LANGS.filter((l) => l.path).map((l) => l.path).join('|')})(\\/|$)/.exec(dec);
   var lang = (m && m[1]) || (S[stored] ? stored : detect());
-  if (route === 'theme' && raw.replace(/^\/theme\/?/, '') === '') { location.replace(S[(m && m[1]) || (S[stored] ? stored : detect())].urls.themes); return; }
+  if (route === 'theme' && raw.replace(/^\\/theme\\/?/, '') === '') { location.replace(S[(m && m[1]) || (S[stored] ? stored : detect())].urls.themes); return; }
   document.body.className = 'route-' + route;
   var android = /Android/i.test(navigator.userAgent);
   var code = route === 'theme' ? raw.replace(/^\\/theme\\/?/, '') : '';
