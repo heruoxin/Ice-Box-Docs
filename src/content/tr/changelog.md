@@ -10,6 +10,14 @@ related: download, features
 
 Mevcut sürüm numaranızı ve kanalınızı Ice Box'ta "Ayarlar > Hakkında" bölümünde bulabilirsiniz. Her dağıtım kanalının ayrıntıları ve en son APK'yı indirmek için [indirme sayfasına](/download/#channels) bakın.
 
+## 3.30.14 {#v3-30-14}
+
+- Yeni diller: İspanyolca, Portekizce, Fransızca, Almanca, Endonezce, Türkçe, Vietnamca ve Japonca
+- Ice Box artık panoyu otomatik olarak okumuyor; temaları ve listeleri Ayarlar'daki "Panodan içe aktar" ile içe aktarın
+- Pro'nun bazen açılmadığı Google Play satın alımları düzeltildi; sonradan tamamlanan ödemeler de dahil
+- Android 17: USB hata ayıklama durumu okunamadığında Kablosuz hata ayıklama eşleme sihirbazı artık takılmıyor
+- Kablosuz hata ayıklama eşlemesinin uyumluluğu iyileştirildi
+
 ## 3.30.11 {#v3-30-11}
 
 - Katlanabilir cihazlardaki düzen sorunları düzeltildi

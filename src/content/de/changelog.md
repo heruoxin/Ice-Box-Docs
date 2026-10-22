@@ -10,6 +10,14 @@ related: download, features
 
 Deine aktuelle Versionsnummer und den Vertriebskanal findest du in Ice Box unter „Einstellungen > Über“. Infos zu den einzelnen Vertriebskanälen und die neueste APK-Datei findest du auf der [Download-Seite](/download/#channels).
 
+## 3.30.14 {#v3-30-14}
+
+- Neue Sprachen: Spanisch, Portugiesisch, Französisch, Deutsch, Indonesisch, Türkisch, Vietnamesisch und Japanisch
+- Ice Box liest die Zwischenablage nicht mehr automatisch; Designs und Listen importierst du mit „Aus Zwischenablage importieren“ in den Einstellungen
+- Google Play-Käufe, die Pro manchmal nicht freigeschaltet haben, wurden behoben, auch bei später abgeschlossenen Zahlungen
+- Android 17: Der Kopplungsassistent für Debugging über WLAN bleibt nicht mehr hängen, wenn der Status von USB-Debugging nicht gelesen werden kann
+- Kompatibilität der Kopplung für Debugging über WLAN verbessert
+
 ## 3.30.11 {#v3-30-11}
 
 - Darstellungsprobleme auf faltbaren Geräten behoben

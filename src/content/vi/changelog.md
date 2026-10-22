@@ -10,6 +10,14 @@ related: download, features
 
 Bạn có thể xem số phiên bản và kênh phát hành hiện tại trong "Cài đặt > Giới thiệu" của Ice Box. Để biết chi tiết về từng kênh phát hành và tải APK mới nhất, hãy xem [trang tải xuống](/download/#channels).
 
+## 3.30.14 {#v3-30-14}
+
+- Ngôn ngữ mới: tiếng Tây Ban Nha, Bồ Đào Nha, Pháp, Đức, Indonesia, Thổ Nhĩ Kỳ, Việt và Nhật
+- Ice Box không còn tự động đọc bảng nhớ tạm; hãy nhập chủ đề và danh sách bằng "Nhập từ bảng nhớ tạm" trong Cài đặt
+- Sửa lỗi mua hàng trên Google Play đôi khi không mở khóa Pro, bao gồm cả các khoản thanh toán hoàn tất sau
+- Android 17: trình hướng dẫn ghép nối Gỡ lỗi không dây không còn bị treo khi không đọc được trạng thái Gỡ lỗi qua USB
+- Cải thiện khả năng tương thích khi ghép nối Gỡ lỗi không dây
+
 ## 3.30.11 {#v3-30-11}
 
 - Sửa lỗi bố cục trên thiết bị màn hình gập

@@ -10,6 +10,14 @@ related: download, features
 
 Anda bisa melihat nomor versi dan saluran yang sedang dipakai di "Setelan > Tentang" di Ice Box. Untuk detail setiap saluran distribusi, dan untuk mengunduh APK terbaru, lihat [halaman unduhan](/download/#channels).
 
+## 3.30.14 {#v3-30-14}
+
+- Bahasa baru: Spanyol, Portugis, Prancis, Jerman, Indonesia, Turki, Vietnam, dan Jepang
+- Ice Box tidak lagi membaca papan klip secara otomatis; impor tema dan daftar melalui "Impor dari papan klip" di Setelan
+- Memperbaiki pembelian Google Play yang terkadang tidak mengaktifkan Pro, termasuk pembayaran yang selesai belakangan
+- Android 17: wizard penyambungan Proses debug nirkabel tidak lagi macet saat status Proses debug USB tidak dapat dibaca
+- Meningkatkan kompatibilitas penyambungan Proses debug nirkabel
+
 ## 3.30.11 {#v3-30-11}
 
 - Memperbaiki masalah tata letak di perangkat lipat

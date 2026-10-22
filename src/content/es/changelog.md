@@ -10,6 +10,14 @@ related: download, features
 
 Puedes ver tu número de versión actual y el canal en "Configuración > Acerca de" de Ice Box. Para ver los detalles de cada canal de distribución y descargar el APK más reciente, consulta la [página de descarga](/download/#channels).
 
+## 3.30.14 {#v3-30-14}
+
+- Nuevos idiomas: español, portugués, francés, alemán, indonesio, turco, vietnamita y japonés
+- Ice Box ya no lee el portapapeles automáticamente; importa temas y listas con "Importar del portapapeles" en Configuración
+- Se corrigieron compras en Google Play que a veces no desbloqueaban Pro, incluidos los pagos que se completan más tarde
+- Android 17: el asistente de vinculación de la Depuración inalámbrica ya no se queda bloqueado cuando no se puede leer el estado de la Depuración por USB
+- Se mejoró la compatibilidad de la vinculación de la Depuración inalámbrica
+
 ## 3.30.11 {#v3-30-11}
 
 - Se corrigieron problemas de diseño en dispositivos plegables
